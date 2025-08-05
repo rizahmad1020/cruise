@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛳️</text></svg>">
+  <title>CruiseSphere | Luxury Cruise Vacations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaskacruises.html">Alaska Cruises</a>
+                <a href="#">Hawaiian Islands</a>
+                <a href="#">New England</a>
+                <a href="#">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="#">Caribbean</a>
+                <a href="#">Mexico</a>
+                <a href="#">Bahamas</a>
+                <a href="#">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Royal Caribbean</a>
+              <a href="#">Celebrity</a>
+              <a href="#">Norwegian</a>
+              <a href="#">Carnival</a>
+              <a href="#">Disney</a>
+            </div>
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="user-btn"><i class="fas fa-user-circle"></i> <span>Sign In</span></button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <i class="fas fa-ship"></i> CruiseSphere
+      </div>
+      <button class="close-btn" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Destinations <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <h4>USA Departures</h4>
+          <a href="alaskacruises.html">Alaska Cruises</a>
+          <a href="#">Hawaiian Islands</a>
+          <a href="#">New England</a>
+          <h4>International</h4>
+          <a href="#">Caribbean</a>
+          <a href="#">Mexico</a>
+        </div>
+      </div>
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Cruise Lines <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Royal Caribbean</a>
+          <a href="#">Celebrity</a>
+          <a href="#">Norwegian</a>
+        </div>
+      </div>
+      <a href="#">Deals</a>
+      <a href="#">Experiences</a>
+      <a href="#">Plan</a>
+    </div>
+    <div class="mobile-footer">
+      <button class="mobile-book-btn">Book Now <i class="fas fa-chevron-right"></i></button>
+      <div class="mobile-contact">
+        <a href="tel:+19200222774"><i class="fas fa-phone-alt"></i> 1-920-022-2774</a>
+        <a href="#"><i class="fas fa-comment"></i> Live Chat</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- New England Cruise Hero Section -->
+<section class="ne-cruise-hero">
+    <div class="ne-hero-overlay">
+        <div class="ne-hero-content">
+            <h1 class="ne-hero-title">Discover New England's Coastal Charm</h1>
+            <p class="ne-hero-subtitle">Sail through historic harbors, vibrant fall foliage, and picturesque lighthouses on an unforgettable cruise</p>
+            <a href="#ne-itinerary" class="ne-hero-cta">Explore Itineraries</a>
+        </div>
+    </div>
+</section>
+
+<!-- New England Cruise Highlights Section -->
+<section class="ne-cruise-highlights">
+    <div class="ne-section-container">
+        <h2 class="ne-section-title">New England Cruise Highlights</h2>
+        <div class="ne-highlights-grid">
+            <div class="ne-highlight-card">
+                <img src="https://example.com/fall-foliage.jpg" alt="New England Fall Foliage" class="ne-highlight-img">
+                <h3 class="ne-highlight-title">Spectacular Fall Colors</h3>
+                <p class="ne-highlight-desc">Witness nature's breathtaking display as the coastline transforms into vibrant hues of red, orange, and gold.</p>
+            </div>
+            <div class="ne-highlight-card">
+                <img src="https://example.com/historic-ports.jpg" alt="Historic New England Ports" class="ne-highlight-img">
+                <h3 class="ne-highlight-title">Historic Coastal Towns</h3>
+                <p class="ne-highlight-desc">Explore charming ports like Newport, Bar Harbor, and Portland, each with unique maritime heritage.</p>
+            </div>
+            <div class="ne-highlight-card">
+                <img src="https://example.com/lobster-dinner.jpg" alt="New England Seafood" class="ne-highlight-img">
+                <h3 class="ne-highlight-title">Fresh Seafood Cuisine</h3>
+                <p class="ne-highlight-desc">Savor world-famous lobster rolls, clam chowder, and freshly caught seafood prepared by expert chefs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New England Cruise Itinerary Section -->
+<section class="ne-cruise-itinerary" id="ne-itinerary">
+    <div class="ne-section-container">
+        <h2 class="ne-section-title">Featured Itineraries</h2>
+        <div class="ne-itinerary-tabs">
+            <button class="ne-tab-btn active" data-tab="ne-classic">Classic Coastal</button>
+            <button class="ne-tab-btn" data-tab="ne-fall">Autumn Foliage</button>
+            <button class="ne-tab-btn" data-tab="ne-luxury">Luxury Escape</button>
+        </div>
+        
+        <div class="ne-tab-content active" id="ne-classic">
+            <div class="ne-itinerary-details">
+                <div class="ne-itinerary-text">
+                    <h3 class="ne-itinerary-title">7-Day Classic Coastal Journey</h3>
+                    <p class="ne-itinerary-desc">Experience the quintessential New England cruise visiting Boston, Martha's Vineyard, Newport, and Cape Cod. Perfect for first-time visitors looking to experience the region's rich history and coastal beauty.</p>
+                    <ul class="ne-itinerary-features">
+                        <li>Guided tours of historic Boston landmarks</li>
+                        <li>Vineyard visit and wine tasting on Martha's Vineyard</li>
+                        <li>Newport mansion tours and cliff walk</li>
+                        <li>Whale watching excursion in Cape Cod</li>
+                    </ul>
+                    <a href="#" class="ne-itinerary-cta">Book Now from $1,299</a>
+                </div>
+                <div class="ne-itinerary-map">
+                    <img src="https://example.com/coastal-map.jpg" alt="Classic Coastal Itinerary Map" class="ne-map-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="ne-tab-content" id="ne-fall">
+            <div class="ne-itinerary-details">
+                <div class="ne-itinerary-text">
+                    <h3 class="ne-itinerary-title">10-Day Autumn Foliage Spectacular</h3>
+                    <p class="ne-itinerary-desc">Cruise during peak foliage season to witness New England's most stunning natural display. This extended itinerary includes all classic ports plus inland excursions to Vermont and New Hampshire.</p>
+                    <ul class="ne-itinerary-features">
+                        <li>Exclusive foliage viewing decks and photography workshops</li>
+                        <li>Guided hikes through Vermont's colorful forests</li>
+                        <li>Apple picking and cider tasting experiences</li>
+                        <li>Special Oktoberfest celebration on board</li>
+                    </ul>
+                    <a href="#" class="ne-itinerary-cta">Book Now from $1,899</a>
+                </div>
+                <div class="ne-itinerary-map">
+                    <img src="https://example.com/foliage-map.jpg" alt="Autumn Foliage Itinerary Map" class="ne-map-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="ne-tab-content" id="ne-luxury">
+            <div class="ne-itinerary-details">
+                <div class="ne-itinerary-text">
+                    <h3 class="ne-itinerary-title">14-Day Luxury New England Explorer</h3>
+                    <p class="ne-itinerary-desc">Our most exclusive itinerary featuring extended stays in each port, premium accommodations, and VIP experiences. Includes Canadian maritime provinces for a comprehensive northeast experience.</p>
+                    <ul class="ne-itinerary-features">
+                        <li>Private tours of historic sites with expert guides</li>
+                        <li>Gourmet dining featuring local ingredients</li>
+                        <li>Helicopter tour over coastal Maine</li>
+                        <li>Personalized concierge service throughout</li>
+                    </ul>
+                    <a href="#" class="ne-itinerary-cta">Book Now from $3,999</a>
+                </div>
+                <div class="ne-itinerary-map">
+                    <img src="https://example.com/luxury-map.jpg" alt="Luxury Itinerary Map" class="ne-map-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- New England Cruise Ports Deep Dive Section -->
+<section class="ne-cruise-ports">
+    <div class="ne-section-container">
+        <h2 class="ne-section-title">Explore New England's Iconic Ports</h2>
+        <p class="ne-section-intro">Each port on your New England cruise offers unique experiences. Click on any port to discover its highlights, activities, and local flavors.</p>
+        
+        <div class="ne-port-accordion" id="nePortAccordion">
+            <!-- Boston -->
+            <div class="ne-port-item">
+                <button class="ne-port-header" aria-expanded="false" aria-controls="boston-content">
+                    <img src="./asset/mediterranean-cruise.jpg" alt="" class="ne-port-thumbnail">
+                    <h3 class="ne-port-name">Boston, Massachusetts</h3>
+                    <span class="ne-port-toggle" aria-hidden="true">+</span>
+                </button>
+                <div id="boston-content" class="ne-port-content">
+                    <div class="ne-port-details">
+                        <div class="ne-port-description">
+                            <p>As the historic heart of New England, Boston blends revolutionary history with modern sophistication. Your ship docks conveniently near downtown, putting the city's famous Freedom Trail at your fingertips.</p>
+                            <div class="ne-port-highlight">
+                                <h4 class="ne-port-subtitle">Must-Experience Activities:</h4>
+                                <ul class="ne-port-activities">
+                                    <li><strong>Freedom Trail Walk:</strong> Follow the red-brick road to 16 historic sites including Faneuil Hall and Paul Revere House</li>
+                                    <li><strong>North End Food Tour:</strong> Sample Boston's best cannoli and Italian cuisine in this vibrant neighborhood</li>
+                                    <li><strong>Fenway Park Tour:</strong> Visit America's oldest MLB ballpark (seasonal availability)</li>
+                                    <li><strong>Boston Tea Party Ships & Museum:</strong> Interactive exhibits bring this pivotal event to life</li>
+                                </ul>
+                            </div>
+                            <div class="ne-port-highlight">
+                                <h4 class="ne-port-subtitle">Local Flavors to Try:</h4>
+                                <div class="ne-port-food">
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/boston-clam-chowder.jpg" alt="New England Clam Chowder in bread bowl">
+                                        <p>New England Clam Chowder</p>
+                                    </div>
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/boston-lobster-roll.jpg" alt="Boston-style lobster roll">
+                                        <p>Boston-style Lobster Roll (warm with butter)</p>
+                                    </div>
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/boston-baked-beans.jpg" alt="Traditional Boston baked beans">
+                                        <p>Traditional Boston Baked Beans</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ne-port-map">
+                            <img src="https://example.com/boston-map.jpg" alt="Map of Boston port area with attractions marked" class="ne-port-map-img">
+                            <div class="ne-port-facts">
+                                <h5>Quick Facts:</h5>
+                                <p><strong>Walkability:</strong> Excellent - most attractions within 2 miles of port</p>
+                                <p><strong>Best Time to Visit:</strong> May-October</p>
+                                <p><strong>Signature Souvenir:</strong> Revolutionary War memorabilia from Faneuil Hall</p>
+                                <button class="ne-port-excursion-btn" data-port="boston">View Excursions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newport -->
+            <div class="ne-port-item">
+                <button class="ne-port-header" aria-expanded="false" aria-controls="newport-content">
+                    <img src="https://example.com/newport-port.jpg" alt="" class="ne-port-thumbnail">
+                    <h3 class="ne-port-name">Newport, Rhode Island</h3>
+                    <span class="ne-port-toggle" aria-hidden="true">+</span>
+                </button>
+                <div id="newport-content" class="ne-port-content">
+                    <div class="ne-port-details">
+                        <div class="ne-port-description">
+                            <p>Newport's Gilded Age mansions and stunning coastal scenery make it a highlight of any New England cruise. This sailing capital offers a perfect mix of history and nautical charm.</p>
+                            <div class="ne-port-highlight">
+                                <h4 class="ne-port-subtitle">Must-Experience Activities:</h4>
+                                <ul class="ne-port-activities">
+                                    <li><strong>The Breakers Tour:</strong> Explore the Vanderbilt's 70-room summer "cottage" - the grandest Newport mansion</li>
+                                    <li><strong>Cliff Walk:</strong> 3.5-mile scenic oceanfront path with mansion views</li>
+                                    <li><strong>Sailing Excursion:</strong> Experience Newport's famous sailing heritage on a schooner cruise</li>
+                                    <li><strong>International Tennis Hall of Fame:</strong> For sports enthusiasts</li>
+                                </ul>
+                            </div>
+                            <div class="ne-port-highlight">
+                                <h4 class="ne-port-subtitle">Local Flavors to Try:</h4>
+                                <div class="ne-port-food">
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/newport-clam-cakes.jpg" alt="Rhode Island clam cakes">
+                                        <p>Rhode Island Clam Cakes</p>
+                                    </div>
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/newport-del's-lemonade.jpg" alt="Del's frozen lemonade">
+                                        <p>Del's Frozen Lemonade</p>
+                                    </div>
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/newport-coffee-milk.jpg" alt="Coffee milk drink">
+                                        <p>Rhode Island's Official Drink: Coffee Milk</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ne-port-map">
+                            <img src="https://example.com/newport-map.jpg" alt="Map of Newport port area with attractions marked" class="ne-port-map-img">
+                            <div class="ne-port-facts">
+                                <h5>Quick Facts:</h5>
+                                <p><strong>Walkability:</strong> Moderate - some attractions require transportation</p>
+                                <p><strong>Best Time to Visit:</strong> June-September</p>
+                                <p><strong>Signature Souvenir:</strong> Nautical-themed jewelry from Thames Street shops</p>
+                                <button class="ne-port-excursion-btn" data-port="newport">View Excursions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bar Harbor -->
+            <div class="ne-port-item">
+                <button class="ne-port-header" aria-expanded="false" aria-controls="barharbor-content">
+                    <img src="https://example.com/barharbor-port.jpg" alt="" class="ne-port-thumbnail">
+                    <h3 class="ne-port-name">Bar Harbor, Maine</h3>
+                    <span class="ne-port-toggle" aria-hidden="true">+</span>
+                </button>
+                <div id="barharbor-content" class="ne-port-content">
+                    <div class="ne-port-details">
+                        <div class="ne-port-description">
+                            <p>The gateway to Acadia National Park, Bar Harbor offers breathtaking natural beauty with rugged coastlines, granite peaks, and quintessential New England charm.</p>
+                            <div class="ne-port-highlight">
+                                <h4 class="ne-port-subtitle">Must-Experience Activities:</h4>
+                                <ul class="ne-port-activities">
+                                    <li><strong>Acadia National Park Tour:</strong> Visit Cadillac Mountain, Thunder Hole, and Jordan Pond</li>
+                                    <li><strong>Lobster Boat Cruise:</strong> Learn about Maine's lobster industry and maybe catch your dinner</li>
+                                    <li><strong>Carriage Roads:</strong> Bike or walk Rockefeller's scenic carriage trails</li>
+                                    <li><strong>Shore Path:</strong> Easy waterfront walk with stunning ocean views</li>
+                                </ul>
+                            </div>
+                            <div class="ne-port-highlight">
+                                <h4 class="ne-port-subtitle">Local Flavors to Try:</h4>
+                                <div class="ne-port-food">
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/maine-lobster.jpg" alt="Whole Maine lobster">
+                                        <p>Fresh Maine Lobster (whole)</p>
+                                    </div>
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/wild-blueberries.jpg" alt="Wild blueberry pie">
+                                        <p>Wild Blueberry Pie</p>
+                                    </div>
+                                    <div class="ne-food-item">
+                                        <img src="https://example.com/maple-syrup.jpg" alt="Maine maple syrup">
+                                        <p>Real Maine Maple Syrup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ne-port-map">
+                            <img src="https://example.com/barharbor-map.jpg" alt="Map of Bar Harbor area with attractions marked" class="ne-port-map-img">
+                            <div class="ne-port-facts">
+                                <h5>Quick Facts:</h5>
+                                <p><strong>Walkability:</strong> Excellent downtown, but Acadia requires transportation</p>
+                                <p><strong>Best Time to Visit:</strong> July-October for peak foliage</p>
+                                <p><strong>Signature Souvenir:</strong> Handmade wooden lobster trap ornament</p>
+                                <button class="ne-port-excursion-btn" data-port="barharbor">View Excursions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ne-ports-cta">
+            <p>Our cruise experts can help you plan the perfect shore excursions for each port. Contact us to customize your New England experience!</p>
+            <a href="#" class="ne-ports-contact-btn">Contact Our Cruise Specialists</a>
+        </div>
+    </div>
+</section>
+
+<!-- New England Cruise Testimonials Section -->
+<section class="ne-cruise-testimonials">
+    <div class="ne-section-container">
+        <h2 class="ne-section-title">What Our Guests Say</h2>
+        <div class="ne-testimonials-slider">
+            <div class="ne-testimonial-card">
+                <div class="ne-testimonial-content">
+                    <img src="https://example.com/quote-icon.png" alt="Quote icon" class="ne-quote-icon">
+                    <p class="ne-testimonial-text">"The autumn foliage cruise exceeded all expectations. The colors were more vibrant than we imagined, and the onboard naturalist helped us appreciate the region's unique ecology."</p>
+                    <div class="ne-testimonial-author">
+                        <img src="https://example.com/guest1.jpg" alt="Sarah Johnson" class="ne-author-img">
+                        <div>
+                            <h4 class="ne-author-name">Sarah Johnson</h4>
+                            <p class="ne-author-location">Austin, TX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ne-testimonial-card">
+                <div class="ne-testimonial-content">
+                    <img src="https://example.com/quote-icon.png" alt="Quote icon" class="ne-quote-icon">
+                    <p class="ne-testimonial-text">"As history buffs, we loved the focus on New England's maritime heritage. The tours of Newport's mansions and Boston's Freedom Trail were highlights of our trip."</p>
+                    <div class="ne-testimonial-author">
+                        <img src="https://example.com/guest2.jpg" alt="Michael Chen" class="ne-author-img">
+                        <div>
+                            <h4 class="ne-author-name">Michael Chen</h4>
+                            <p class="ne-author-location">Chicago, IL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ne-testimonial-card">
+                <div class="ne-testimonial-content">
+                    <img src="https://example.com/quote-icon.png" alt="Quote icon" class="ne-quote-icon">
+                    <p class="ne-testimonial-text">"The food! Oh my goodness, the food was incredible. From lobster bakes on the beach to the chef's tasting menus, every meal was a celebration of New England flavors."</p>
+                    <div class="ne-testimonial-author">
+                        <img src="https://example.com/guest3.jpg" alt="Emily Rodriguez" class="ne-author-img">
+                        <div>
+                            <h4 class="ne-author-name">Emily Rodriguez</h4>
+                            <p class="ne-author-location">Miami, FL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- New England Cruise CTA Section -->
+<section class="ne-cruise-cta">
+    <div class="ne-cta-container">
+        <div class="ne-cta-content">
+            <h2 class="ne-cta-title">Ready to Explore New England's Coast?</h2>
+            <p class="ne-cta-text">Limited availability for fall foliage season - book now to secure your spot!</p>
+            <div class="ne-cta-buttons">
+                <a href="#" class="ne-cta-primary">Book Your Cruise</a>
+                <a href="#" class="ne-cta-secondary">Request Brochure</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+<footer class="cruisesphere-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3 class="footer-logo">CruiseSphere</h3>
+        <p class="footer-about">Your gateway to unforgettable cruise experiences across the Mediterranean, Red Sea, and beyond. We specialize in luxury voyages with authentic American hospitality.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section links-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mediterranean Cruises</a></li>
+          <li><a href="#">Red Sea Cruises</a></li>
+          <li><a href="#">Ship Facilities</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-section contact-section">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> CruiseSphere HQ, New York, America</li>
+          <li><i class="fas fa-phone"></i> +1 920-022-277</li>
+          <li><i class="fas fa-envelope"></i> info@cruisesphere.com</li>
+          <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="footer-section newsletter-section">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for exclusive deals and cruise updates</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2023 CruiseSphere. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+  </body>
+  </html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛳️</text></svg>">
+  <title>CruiseSphere | Luxury Cruise Vacations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaskacruises.html">Alaska Cruises</a>
+                <a href="#">Hawaiian Islands</a>
+                <a href="#">New England</a>
+                <a href="#">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="#">Caribbean</a>
+                <a href="#">Mexico</a>
+                <a href="#">Bahamas</a>
+                <a href="#">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Royal Caribbean</a>
+              <a href="#">Celebrity</a>
+              <a href="#">Norwegian</a>
+              <a href="#">Carnival</a>
+              <a href="#">Disney</a>
+            </div>
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="user-btn"><i class="fas fa-user-circle"></i> <span>Sign In</span></button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <i class="fas fa-ship"></i> CruiseSphere
+      </div>
+      <button class="close-btn" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Destinations <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <h4>USA Departures</h4>
+          <a href="alaskacruises.html">Alaska Cruises</a>
+          <a href="#">Hawaiian Islands</a>
+          <a href="#">New England</a>
+          <h4>International</h4>
+          <a href="#">Caribbean</a>
+          <a href="#">Mexico</a>
+        </div>
+      </div>
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Cruise Lines <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Royal Caribbean</a>
+          <a href="#">Celebrity</a>
+          <a href="#">Norwegian</a>
+        </div>
+      </div>
+      <a href="#">Deals</a>
+      <a href="#">Experiences</a>
+      <a href="#">Plan</a>
+    </div>
+    <div class="mobile-footer">
+      <button class="mobile-book-btn">Book Now <i class="fas fa-chevron-right"></i></button>
+      <div class="mobile-contact">
+        <a href="tel:+19200222774"><i class="fas fa-phone-alt"></i> 1-920-022-2774</a>
+        <a href="#"><i class="fas fa-comment"></i> Live Chat</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+<!-- Hawaiian Cruise Hero Section -->
+<section class="hc-hero-section">
+    <div class="hc-hero-overlay"></div>
+    <div class="hc-hero-content">
+        <h1 class="hc-hero-title">Discover Paradise on Our Hawaiian Island Cruises</h1>
+        <p class="hc-hero-subtitle">Sail through turquoise waters to volcanic islands, lush valleys, and golden beaches</p>
+        <a href="#hc-itinerary" class="hc-hero-button">Explore Itineraries</a>
+    </div>
+</section>
+
+<!-- Hawaiian Cruise Intro Section -->
+<section class="hc-intro-section">
+    <div class="hc-container">
+        <h2 class="hc-section-title">Aloha! Welcome to Your Dream Hawaiian Vacation</h2>
+        <div class="hc-intro-grid">
+            <div class="hc-intro-text">
+                <p>Experience the magic of Hawaii like never before aboard our luxury cruise ships. Our Hawaiian island-hopping adventure takes you to the most breathtaking destinations across the archipelago, combining the comfort of a floating resort with the thrill of discovering multiple islands.</p>
+                <p>From the dramatic cliffs of the Napali Coast to the fiery volcanoes of the Big Island, each day brings new wonders. Enjoy authentic luaus, world-class snorkeling, and the legendary Hawaiian hospitality as you sail from one paradise to another.</p>
+            </div>
+            <div class="hc-intro-image">
+                <img src="./asset/hawaiian-island.webp" alt="Luxury cruise ship sailing past Hawaiian islands" class="hc-responsive-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hawaiian Cruise Highlights Section -->
+<section class="hc-highlights-section">
+    <div class="hc-container">
+        <h2 class="hc-section-title hc-center">Your Hawaiian Cruise Highlights</h2>
+        <div class="hc-highlights-grid">
+            <div class="hc-highlight-card">
+                <div class="hc-highlight-icon">
+                    <img src="./asset/private-island.jpeg" alt="Beach icon">
+                </div>
+                <h3 class="hc-highlight-title">Private Island Beaches</h3>
+                <p>Exclusive access to pristine beaches with crystal-clear waters perfect for swimming and snorkeling.</p>
+            </div>
+            <div class="hc-highlight-card">
+                <div class="hc-highlight-icon">
+                    <img src="./asset/authentic-cultural.webp" alt="Culture icon">
+                </div>
+                <h3 class="hc-highlight-title">Authentic Cultural Experiences</h3>
+                <p>Participate in traditional hula lessons, lei-making workshops, and authentic Hawaiian luaus.</p>
+            </div>
+            <div class="hc-highlight-card">
+                <div class="hc-highlight-icon">
+                    <img src="./asset/adventure.webp" alt="Adventure icon">
+                </div>
+                <h3 class="hc-highlight-title">Adventure Excursions</h3>
+                <p>From volcano hikes to helicopter tours and submarine adventures, thrill-seekers will love our excursions.</p>
+            </div>
+            <div class="hc-highlight-card">
+                <div class="hc-highlight-icon">
+                    <img src="./asset/luxary-amenity.jpg" alt="Luxury icon">
+                </div>
+                <h3 class="hc-highlight-title">Luxury Amenities</h3>
+                <p>Enjoy spa treatments with local ingredients, gourmet Hawaiian cuisine, and premium staterooms with ocean views.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hawaiian Cruise Itinerary Section -->
+<section class="hc-itinerary-section" id="hc-itinerary">
+    <div class="hc-container">
+        <h2 class="hc-section-title hc-center">7-Day Island-Hopping Itinerary</h2>
+        <div class="hc-itinerary-timeline">
+            <div class="hc-timeline-item">
+                <div class="hc-timeline-image">
+                    <img src="./asset/oahu-island.jpeg" alt="Oahu coastline" class="hc-responsive-image">
+                </div>
+                <div class="hc-timeline-content">
+                    <h3 class="hc-timeline-day">Day 1: Oahu</h3>
+                    <p>Embark in Honolulu with a welcome lei ceremony. Explore Waikiki Beach or visit Pearl Harbor before our sunset departure.</p>
+                </div>
+            </div>
+            <div class="hc-timeline-item hc-reverse">
+                <div class="hc-timeline-image">
+                    <img src="./asset/maui.jpg" alt="Maui landscape" class="hc-responsive-image">
+                </div>
+                <div class="hc-timeline-content">
+                    <h3 class="hc-timeline-day">Day 2-3: Maui</h3>
+                    <p>Two days to explore the Road to Hana, Haleakalā sunrise, and Lahaina's historic whaling village. Optional luau experience.</p>
+                </div>
+            </div>
+            <div class="hc-timeline-item">
+                <div class="hc-timeline-image">
+                    <img src="./asset/big-island.jpg" alt="Hawaii Volcanoes National Park" class="hc-responsive-image">
+                </div>
+                <div class="hc-timeline-content">
+                    <h3 class="hc-timeline-day">Day 4: Big Island</h3>
+                    <p>Discover Hawaii Volcanoes National Park, black sand beaches, and Kona coffee plantations.</p>
+                </div>
+            </div>
+            <div class="hc-timeline-item hc-reverse">
+                <div class="hc-timeline-image">
+                    <img src="./asset/Kauai.jpg" alt="Napali Coast" class="hc-responsive-image">
+                </div>
+                <div class="hc-timeline-content">
+                    <h3 class="hc-timeline-day">Day 5-6: Kauai</h3>
+                    <p>Marvel at the Napali Coast, Waimea Canyon, and take a river cruise to Fern Grotto. Helicopter tours available.</p>
+                </div>
+            </div>
+            <div class="hc-timeline-item">
+                <div class="hc-timeline-image">
+                    <img src="./asset/honolulu.webp" alt="Honolulu skyline" class="hc-responsive-image">
+                </div>
+                <div class="hc-timeline-content">
+                    <h3 class="hc-timeline-day">Day 7: Return to Oahu</h3>
+                    <p>Disembark with memories to last a lifetime, or extend your stay to explore more of Oahu at your leisure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hawaiian Cruise Gallery Section -->
+<section class="hc-gallery-section">
+    <div class="hc-container">
+        <h2 class="hc-section-title hc-center">Glimpse of Paradise</h2>
+        <div class="hc-gallery-grid">
+            <div class="hc-gallery-item hc-tall">
+                <img src="./asset/hawaiian-beach-sunset.jpg" alt="Hawaiian beach at sunset" class="hc-responsive-image">
+            </div>
+            <div class="hc-gallery-item">
+                <img src="./asset/volcano-sunset.jpg" alt="Volcano eruption at night" class="hc-responsive-image">
+            </div>
+            <div class="hc-gallery-item hc-wide">
+                <img src="./asset/traditional.jpg" alt="Traditional Hawaiian luau" class="hc-responsive-image">
+            </div>
+            <div class="hc-gallery-item">
+                <img src="https://www.cmaquarium.org/app/uploads/2023/04/2022.06.14-5-1.jpg" alt="Snorkeling in clear waters" class="hc-responsive-image">
+            </div>
+            <div class="hc-gallery-item hc-tall">
+                <img src="https://as1.ftcdn.net/jpg/00/10/07/52/1000_F_10075200_DswAxPKny3cbMTG3MOj66Zj7MomTvdoy.jpg" alt="Lush Hawaiian waterfall" class="hc-responsive-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hawaiian Cruise Testimonials Section -->
+<section class="hc-testimonials-section">
+    <div class="hc-container">
+        <h2 class="hc-section-title hc-center">What Our Guests Say</h2>
+        <div class="hc-testimonials-slider">
+            <div class="hc-testimonial-card">
+                <div class="hc-testimonial-content">
+                    <p>"This cruise exceeded all expectations! Visiting four islands without packing/unpacking was perfect. The cultural activities onboard made the experience so authentic."</p>
+                </div>
+                <div class="hc-testimonial-author">
+                    <img src="https://ntvb.tmsimg.com/assets/assets/720549_v9_bb.jpg" alt="Sarah Johnson" class="hc-testimonial-image">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <p>February 2024 Cruise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hc-testimonial-card">
+                <div class="hc-testimonial-content">
+                    <p>"The snorkeling excursion in Maui was incredible - we saw sea turtles! And watching the lava flow at night from our ship was unforgettable. Highly recommend!"</p>
+                </div>
+                <div class="hc-testimonial-author">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqme4GK-ilh-cQ9Y1AQrvFj59hbV32Z_ja7A&s" alt="Michael Chen" class="hc-testimonial-image">
+                    <div>
+                        <h4>Michael Chen</h4>
+                        <p>December 2023 Cruise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hc-testimonial-card">
+                <div class="hc-testimonial-content">
+                    <p>"Perfect family vacation. The kids loved the cultural activities, we loved the relaxation. Something for everyone with excellent service throughout."</p>
+                </div>
+                <div class="hc-testimonial-author">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGtYcoKEJ8hfexpzNhBcrDW1NHjFEQ9gNtA&s" alt="The Rodriguez Family" class="hc-testimonial-image">
+                    <div>
+                        <h4>The Rodriguez Family</h4>
+                        <p>July 2023 Cruise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hawaiian Cruise CTA Section -->
+<section class="hc-cta-section">
+    <div class="hc-container">
+        <div class="hc-cta-box">
+            <div class="hc-cta-content">
+                <h2 class="hc-cta-title">Ready for Your Hawaiian Adventure?</h2>
+                <p class="hc-cta-text">Limited cabins available for our 2024-2025 sailings. Book now to secure your spot in paradise!</p>
+                <div class="hc-cta-buttons">
+                    <a href="#" class="hc-cta-button hc-primary">Book Now</a>
+                    <a href="#" class="hc-cta-button hc-secondary">Request Brochure</a>
+                </div>
+            </div>
+            <div class="hc-cta-image">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/5e086a2f25ab5d0007cf74ec/Oahu/0x0.jpg?format=jpg&crop=1866,1244,x1,y0,safe&width=960" alt="Hawaiian sunset over ocean" class="hc-responsive-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="cruisesphere-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3 class="footer-logo">CruiseSphere</h3>
+        <p class="footer-about">Your gateway to unforgettable cruise experiences across the Mediterranean, Red Sea, and beyond. We specialize in luxury voyages with authentic American hospitality.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section links-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mediterranean Cruises</a></li>
+          <li><a href="#">Red Sea Cruises</a></li>
+          <li><a href="#">Ship Facilities</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-section contact-section">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> CruiseSphere HQ, New York, America</li>
+          <li><i class="fas fa-phone"></i> +1 920-022-277</li>
+          <li><i class="fas fa-envelope"></i> info@cruisesphere.com</li>
+          <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="footer-section newsletter-section">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for exclusive deals and cruise updates</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2023 CruiseSphere. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+  </body>
+  </html>

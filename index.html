@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛳️</text></svg>">
+  <title>CruiseSphere | Luxury Cruise Vacations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaskacruises.html">Alaska Cruises</a>
+                <a href="hawaiianIsland.html">Hawaiian Islands</a>
+                <a href="NewEngland.html">New England</a>
+                <a href="#">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="#">Caribbean</a>
+                <a href="#">Mexico</a>
+                <a href="#">Bahamas</a>
+                <a href="#">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Royal Caribbean</a>
+              <a href="#">Celebrity</a>
+              <a href="#">Norwegian</a>
+              <a href="#">Carnival</a>
+              <a href="#">Disney</a>
+            </div>
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="user-btn"><i class="fas fa-user-circle"></i> <span>Sign In</span></button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <i class="fas fa-ship"></i> CruiseSphere
+      </div>
+      <button class="close-btn" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Destinations <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <h4>USA Departures</h4>
+          <a href="alaskacruises.html">Alaska Cruises</a>
+          <a href="#">Hawaiian Islands</a>
+          <a href="#">New England</a>
+          <h4>International</h4>
+          <a href="#">Caribbean</a>
+          <a href="#">Mexico</a>
+        </div>
+      </div>
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Cruise Lines <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Royal Caribbean</a>
+          <a href="#">Celebrity</a>
+          <a href="#">Norwegian</a>
+        </div>
+      </div>
+      <a href="#">Deals</a>
+      <a href="#">Experiences</a>
+      <a href="#">Plan</a>
+    </div>
+    <div class="mobile-footer">
+      <button class="mobile-book-btn">Book Now <i class="fas fa-chevron-right"></i></button>
+      <div class="mobile-contact">
+        <a href="tel:+19200222774"><i class="fas fa-phone-alt"></i> 1-920-022-2774</a>
+        <a href="#"><i class="fas fa-comment"></i> Live Chat</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="cruise-hero">
+    <div class="cruise-offer">
+      <div class="offer-badge">Limited Time Offer</div>
+      <h3>Unforgettable Mediterranean Getaway</h3>
+      <h1>Enjoy up to <span class="cruise-highlight">$500</span></h1>
+      <p class="offer-details">Discount for the Second Guest & Kids Sail Free!</p>
+      <div class="cruise-countdown" id="countdown">
+        <div class="countdown-title">SALE ENDS IN</div>
+        <div class="countdown-timer">
+          <div class="countdown-item">
+            <span id="days">00</span>
+            <span>DAYS</span>
+          </div>
+          <div class="countdown-item">
+            <span id="hours">00</span>
+            <span>HRS</span>
+          </div>
+          <div class="countdown-item">
+            <span id="minutes">00</span>
+            <span>MINS</span>
+          </div>
+          <div class="countdown-item">
+            <span id="seconds">00</span>
+            <span>SECS</span>
+          </div>
+        </div>
+      </div>
+      <button class="cruise-book-btn" >
+        <i class="fas fa-calendar-check"></i> Book Now
+      </button>
+      <div class="hero-features">
+        <div class="feature">
+          <i class="fas fa-wifi"></i>
+          <span>Free WiFi</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-utensils"></i>
+          <span>Gourmet Dining</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-swimming-pool"></i>
+          <span>Infinity Pools</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cruise-carousel">
+      <div class="carousel-container">
+        <img id="carouselImage" src="./asset/carribean-cruise.avif" alt="Luxury Cruise Ship" />
+        <div class="carousel-overlay">
+          <h3>Mediterranean Majesty</h3>
+          <p>7-Night Luxury Cruise</p>
+        </div>
+      </div>
+      <div class="cruise-arrows">
+        <button class="cruise-arrow prev" onclick="prevImage()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="cruise-arrow next" onclick="nextImage()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cruise-planner">
+    <div class="planner-tabs">
+      <div class="cruise-tab active" onclick="switchTab(0)">
+        <i class="fas fa-search-location"></i> Plan a Cruise
+      </div>
+      <div class="cruise-tab" onclick="switchTab(1)">
+        <i class="fas fa-clipboard-check"></i> Manage Booking
+      </div>
+    </div>
+    <div class="cruise-search-form active">
+      <div class="form-group">
+        <label for="destination"><i class="fas fa-map-marker-alt"></i> Destination</label>
+        <select id="destination">
+          <option value="">All Destinations</option>
+          <option value="mediterranean">Mediterranean</option>
+          <option value="khuzama">Khuzama</option>
+          <option value="caribbean">Caribbean</option>
+          <option value="nordic">Nordic</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="departure"><i class="fas fa-anchor"></i> Departure Port</label>
+        <select id="departure">
+          <option value="">All Ports</option>
+          <option value="jeddah">Jeddah</option>
+          <option value="dubai">Dubai</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="rome">Rome</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date"><i class="fas fa-calendar-alt"></i> Date</label>
+        <input type="date" id="date" />
+      </div>
+      <div class="form-group">
+        <label for="guests"><i class="fas fa-users"></i> Guests</label>
+        <select id="guests">
+          <option value="1">1 Adult</option>
+          <option value="2" selected>2 Adults</option>
+          <option value="3">2 Adults, 1 Child</option>
+          <option value="4">2 Adults, 2 Children</option>
+          <option value="5">Family (4+ Members)</option>
+        </select>
+      </div>
+      <button class="cruise-search-btn" onclick="bounce(this)">
+        <i class="fas fa-search"></i> Search Cruises
+      </button>
+    </div>
+    <div class="cruise-manage-form">
+      <div class="form-group">
+        <label for="booking-number"><i class="fas fa-receipt"></i> Booking Number</label>
+        <input type="text" id="booking-number" placeholder="Enter your booking number" />
+      </div>
+      <div class="form-group">
+        <label for="last-name"><i class="fas fa-user"></i> Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name" />
+      </div>
+      <button class="cruise-search-btn" onclick="bounce(this)">
+        <i class="fas fa-search"></i> Find My Booking
+      </button>
+    </div>
+  </section>
+
+
+  <section class="mediterranean-cruises">
+  <div class="section-header">
+    <h2>Remarkable Mediterranean Cruises</h2>
+    <p>Discover the beauty of the Mediterranean with our exclusive cruise packages</p>
+  </div>
+
+  <div class="cruise-cards-container">
+    <!-- Cruise Card 1 - Greece -->
+    <div class="cruise-card" onclick="toggleCard(this)">
+      <div class="card-front">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+          <div class="card-duration">7 Nights</div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Istanbul to Greece's Coastal Cities</h3>
+          <p class="card-teaser">Journey from Istanbul to Greece's coastal cities and islands</p>
+          <div class="card-cta">Book Now <i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="back-image" style="background-image: url('https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80')"></div>
+        <div class="back-content">
+          <p>Get ready to visit the most famous and fabulous Greek cities and islands along the Mediterranean coast.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-wine-glass-alt"></i> Gourmet dining experiences</li>
+            <li><i class="fas fa-sun"></i> Private beach access</li>
+            <li><i class="fas fa-landmark"></i> Guided historical tours</li>
+          </ul>
+          <button class="card-book-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-shopping-cart"></i> Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cruise Card 2 - Turkey -->
+    <div class="cruise-card" onclick="toggleCard(this)">
+      <div class="card-front">
+        <div class="card-image" style="background-image: url(./asset/turkey.jpg)">
+          <div class="card-duration">5 Nights</div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Istanbul to Turkey's Coastal Cities</h3>
+          <p class="card-teaser">Journey through stunning Turkish cities on the Mediterranean</p>
+          <div class="card-cta">Book Now <i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="back-image" style="background-image: url(./asset/turkey.jpg)"></div>
+        <div class="back-content">
+          <p>Embark on a journey through the most stunning Turkish cities on the Mediterranean.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-umbrella-beach"></i> Private cabana access</li>
+            <li><i class="fas fa-spa"></i> Luxury spa treatments</li>
+            <li><i class="fas fa-ship"></i> Sunset yacht tours</li>
+          </ul>
+          <button class="card-book-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-shopping-cart"></i> Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="mediterranean-cruises">
+  <div class="section-header">
+    <h2>Remarkable Red Sea Cruises</h2>
+    <p>Experience the wonders of the Red Sea with our exclusive cruise packages</p>
+  </div>
+
+  <div class="cruise-cards-container">
+    <!-- Cruise Card 1 - 5 Nights -->
+    <div class="cruise-card" onclick="toggleCard(this)">
+      <div class="card-front">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+          <div class="card-duration">5 Nights</div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Jeddah to Safaga & Sharm El-Sheikh</h3>
+          <p class="card-teaser">Journey through the stunning Red Sea coast to Egypt's premier destinations</p>
+          <div class="card-cta">Book Now <i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="back-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="back-content">
+          <p>Discover the vibrant marine life and stunning resorts of Egypt's Red Sea coast. Visit Hurghada's famous beaches and Sharm El-Sheikh's coral reefs.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-swimmer"></i> Snorkeling & diving excursions</li>
+            <li><i class="fas fa-umbrella-beach"></i> Private island visits</li>
+            <li><i class="fas fa-hotel"></i> Luxury resort access</li>
+          </ul>
+          <a href="https://booking.arcya.com/booksb2c/fpuborderes%7d?locale=%3A'em-%3C"packagetype=%3A/HEGAI=5%a2&quot;card=%3A'true=%70%A0" class="card-book-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-shopping-cart"></i> Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cruise Card 2 - 4 Nights -->
+    <div class="cruise-card" onclick="toggleCard(this)">
+      <div class="card-front">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80')">
+          <div class="card-duration">4 Nights</div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Jeddah to Safaga (Hurghada)</h3>
+          <p class="card-teaser">Explore the beautiful Red Sea coastline to Hurghada</p>
+          <div class="card-cta">Book Now <i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="back-image" style="background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')"></div>
+        <div class="back-content">
+          <p>Enjoy a shorter cruise focusing on Hurghada's beautiful beaches and vibrant coral reefs, perfect for a quick getaway.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-fish"></i> Glass-bottom boat tours</li>
+            <li><i class="fas fa-cocktail"></i> Beachfront dining</li>
+            <li><i class="fas fa-spa"></i> Spa and wellness packages</li>
+          </ul>
+          <a href="https://booking.arcya.com/booksb2c/fpuborderes%7d?locale=%3A'em-%3C"packagetype=%3A/HEGAI=5%a2&quot;card=%3A'true=%70%A0" class="card-book-btn" onclick="event.stopPropagation()">
+            <i class="fas fa-shopping-cart"></i> Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="aroya-facilities">
+  <div class="facilities-container">
+    <div class="facilities-header">
+      <h2 class="facilities-title">Remarkable Ship Facilities</h2>
+      <button class="facilities-learn-more">Learn more <i class="fas fa-chevron-right"></i></button>
+    </div>
+    
+    <div class="facilities-content">
+      <p class="facilities-description">
+        Providing our guests on board CruiseSphere Cruises with a unique opportunity to enjoy a remarkable vacation tailored to their preferences, where dreams are met with a blend of immersive experiences, exquisite international dining, live entertainment, and relaxation in our beauty halls, along with a variety of pre-arranged activities in fascinating destinations and charming beaches.
+      </p>
+      
+      <div class="facilities-highlights">
+        <!-- Dining Facility -->
+        <div class="highlight-item">
+          <div class="highlight-image" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+            <i class="fas fa-utensils highlight-icon"></i>
+          </div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Exquisite Dining</h3>
+            <p class="highlight-text">International cuisine from world-class chefs</p>
+            <button class="highlight-button">View Restaurants</button>
+          </div>
+        </div>
+        
+        <!-- Entertainment Facility -->
+        <div class="highlight-item">
+          <div class="highlight-image" style="background-image: url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80')">
+            <i class="fas fa-theater-masks highlight-icon"></i>
+          </div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Live Entertainment</h3>
+            <p class="highlight-text">Broadway-style shows and performances</p>
+            <button class="highlight-button">See Shows</button>
+          </div>
+        </div>
+        
+        <!-- Spa Facility -->
+        <div class="highlight-item">
+          <div class="highlight-image" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+            <i class="fas fa-spa highlight-icon"></i>
+          </div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Beauty & Wellness</h3>
+            <p class="highlight-text">Luxury spa treatments and relaxation</p>
+            <button class="highlight-button">Explore Spa</button>
+          </div>
+        </div>
+        
+        <!-- Excursions Facility -->
+        <div class="highlight-item">
+          <div class="highlight-image" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1368&q=80')">
+            <i class="fas fa-umbrella-beach highlight-icon"></i>
+          </div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Shore Excursions</h3>
+            <p class="highlight-text">Curated activities at every destination</p>
+            <button class="highlight-button">Discover Tours</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="luxury-experiences">
+  <div class="experiences-container">
+    
+    <!-- Blossom Spa -->
+    <div class="experience-card spa-card">
+      <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+        <div class="experience-overlay"></div>
+        <h2 class="experience-title">Blossom Spa</h2>
+        <p class="experience-tagline">Where indulgence and exceptional services meet</p>
+      </div>
+      <div class="experience-content">
+        <p class="experience-description">Experience comfort and serenity at Blossom Spa, where the finest beauty products await as you unwind and enjoy our unique services within Blossom Spa, Beauty Clinic, and Beauty Center.</p>
+        <div class="experience-features">
+          <span><i class="fas fa-spa"></i> Luxury Treatments</span>
+          <span><i class="fas fa-water"></i> Hydrotherapy</span>
+          <span><i class="fas fa-heart"></i> Wellness Programs</span>
+        </div>
+        <button class="experience-button">Explore Spa <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+    <!-- Restaurants -->
+    <div class="experience-card restaurant-card">
+      <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+        <div class="experience-overlay"></div>
+        <h2 class="experience-title">Restaurants</h2>
+        <p class="experience-tagline">Beyond Ordinary Experience</p>
+      </div>
+      <div class="experience-content">
+        <p class="experience-description">A world of delightful cuisine awaits, where authentic flavors intertwine with international quality and cultural influences.</p>
+        <div class="experience-features">
+          <span><i class="fas fa-utensils"></i> Gourmet Dining</span>
+          <span><i class="fas fa-wine-glass-alt"></i> Fine Wines</span>
+          <span><i class="fas fa-globe-asia"></i> Global Cuisine</span>
+        </div>
+        <button class="experience-button">View Menus <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+    <!-- Khuzama Experience -->
+    <div class="experience-card khuzama-card">
+      <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+        <div class="experience-overlay"></div>
+        <h2 class="experience-title">Khuzama Experience</h2>
+        <p class="experience-tagline">Luxury at the heart of the sea</p>
+      </div>
+      <div class="experience-content">
+        <p class="experience-description">Immerse in luxury at Khuzama area, where you can find an exquisite sanctuary for relaxation as you create beautiful memories within its authentic American features.</p>
+        <div class="experience-features">
+          <span><i class="fas fa-umbrella-beach"></i> Private Beach</span>
+          <span><i class="fas fa-swimming-pool"></i> Infinity Pool</span>
+          <span><i class="fas fa-mosque"></i> American Architecture</span>
+        </div>
+        <button class="experience-button">Discover Khuzama <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+    <!-- ABOYA Theatre -->
+    <div class="experience-card theatre-card">
+      <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80')">
+        <div class="experience-overlay"></div>
+        <h2 class="experience-title">ABOYA Theatre</h2>
+        <p class="experience-tagline">Arts that captivate your imagination</p>
+      </div>
+      <div class="experience-content">
+        <p class="experience-description">Enjoy a variety of vibrant live performances at ABOYA Theatre where we provide you with infinite opportunities to have fun.</p>
+        <div class="experience-features">
+          <span><i class="fas fa-masks-theater"></i> Live Shows</span>
+          <span><i class="fas fa-music"></i> Concerts</span>
+          <span><i class="fas fa-laugh"></i> Comedy Nights</span>
+        </div>
+        <button class="experience-button">View Schedule <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="cruise-deals-subscription">
+  <div class="subscription-container">
+    <div class="subscription-header">
+      <h2 class="subscription-title">Never miss a cruise deal, sign up today!</h2>
+      <p class="subscription-subtitle">Sign up to receive exclusive offers and updates</p>
+    </div>
+    
+    <div class="subscription-forms">
+      <!-- Main Signup Form -->
+      <div class="signup-form">
+        <h3 class="form-title">Get Cruise Deals</h3>
+        <form class="deal-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-with-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <div class="input-with-icon">
+              <i class="fas fa-phone"></i>
+              <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+          </div>
+          
+          <div class="form-options">
+            <label class="checkbox-container">
+              <input type="checkbox" checked>
+              <span class="checkmark"></span>
+              <span class="checkbox-text">I agree to receive news and updates</span>
+            </label>
+            <p class="form-disclaimer">You can unsubscribe at any time. For more details about how we use your information, view our <a href="#" class="privacy-link">Privacy Policy</a>.</p>
+          </div>
+          
+          <button type="submit" class="signup-button">
+            SIGN UP <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+      
+      <!-- Newsletter Divider -->
+      <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-text">OR</span>
+        <span class="divider-line"></span>
+      </div>
+      
+      <!-- Newsletter Form -->
+      <div class="newsletter-form">
+        <h3 class="form-title">Subscribe to our newsletter</h3>
+        <form class="newsletter-subscribe">
+          <div class="form-group">
+            <label for="newsletter-email">Email Address</label>
+            <div class="input-with-icon">
+              <i class="fas fa-newspaper"></i>
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+          
+          <div class="form-options">
+            <label class="checkbox-container">
+              <input type="checkbox" checked>
+              <span class="checkmark"></span>
+              <span class="checkbox-text">I agree to receive news and updates</span>
+            </label>
+          </div>
+          
+          <button type="submit" class="subscribe-button">
+            Subscribe <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="aroya-faq-section">
+  <div class="faq-container">
+    <h2 class="faq-main-title">CruiseSphere Cruise Information</h2>
+    
+    <div class="faq-categories">
+      <!-- Onboard Experiences -->
+      <div class="faq-category">
+        <h3 class="category-title">Onboard Experiences</h3>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              What dining options are available onboard?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>CruiseSphere Cruises offers a variety of dining options including 5 specialty restaurants, 3 main dining rooms, buffet options, and 24-hour room service. Our culinary team prepares international cuisine with regional specialties.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              What entertainment options are available?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Enjoy Broadway-style shows at our theater, live music performances, comedy clubs, cinema, casino, and various themed parties. We also offer enrichment programs including cooking classes and art workshops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Destinations -->
+      <div class="faq-category">
+        <h3 class="category-title">Destinations</h3>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              Which ports does CruiseSphere visit?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Our cruises visit spectacular destinations across the Red Sea, Mediterranean, and American mexican including Jeddah, Sharm El Sheikh, Safaga, Dubai, Barcelona, and Santorini.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              Are shore excursions included?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We offer both included and optional shore excursions. Each port has at least one complimentary activity, with additional premium excursions available for booking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Explore CruiseSphere -->
+      <div class="faq-category">
+        <h3 class="category-title">Explore CruiseSphere</h3>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              What makes CruiseSphere different from other cruise lines?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>CruiseSphere combines American hospitality with international cruise standards, offering unique cultural experiences, halal dining options, prayer facilities, and family-friendly entertainment tailored for our guests.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              What cabin categories are available?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We offer Interior, Oceanview, Balcony, and Suite categories with various subcategories including Family Cabins and Accessible Cabins. All feature modern American-inspired decor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Policies -->
+      <div class="faq-category">
+        <h3 class="category-title">Policies</h3>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              What is your cancellation policy?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Cancellations made 90+ days before sailing receive full refund. 50% refund for 60-89 days, 25% for 30-59 days. No refunds within 30 days. Travel insurance is recommended.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              What health and safety measures are in place?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We follow international health standards with enhanced cleaning, medical facilities onboard, and trained staff. Vaccination requirements vary by itinerary and are updated regularly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="cruisesphere-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3 class="footer-logo">CruiseSphere</h3>
+        <p class="footer-about">Your gateway to unforgettable cruise experiences across the Mediterranean, Red Sea, and beyond. We specialize in luxury voyages with authentic American hospitality.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section links-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mediterranean Cruises</a></li>
+          <li><a href="#">Red Sea Cruises</a></li>
+          <li><a href="#">Ship Facilities</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-section contact-section">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> CruiseSphere HQ, New York, America</li>
+          <li><i class="fas fa-phone"></i> +1 920-022-277</li>
+          <li><i class="fas fa-envelope"></i> info@cruisesphere.com</li>
+          <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="footer-section newsletter-section">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for exclusive deals and cruise updates</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2023 CruiseSphere. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Call Button -->
+<div class="floating-call-button">
+  <a href="tel:+966920022277" class="call-button">
+    <i class="fas fa-phone"></i>
+  </a>
+  <span class="call-text">Call Us</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

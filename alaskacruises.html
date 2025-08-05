@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛳️</text></svg>">
+  <title>CruiseSphere | Luxury Cruise Vacations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaskacruises.html">Alaska Cruises</a>
+                <a href="#">Hawaiian Islands</a>
+                <a href="#">New England</a>
+                <a href="#">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="#">Caribbean</a>
+                <a href="#">Mexico</a>
+                <a href="#">Bahamas</a>
+                <a href="#">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Royal Caribbean</a>
+              <a href="#">Celebrity</a>
+              <a href="#">Norwegian</a>
+              <a href="#">Carnival</a>
+              <a href="#">Disney</a>
+            </div>
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="user-btn"><i class="fas fa-user-circle"></i> <span>Sign In</span></button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <i class="fas fa-ship"></i> CruiseSphere
+      </div>
+      <button class="close-btn" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Destinations <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <h4>USA Departures</h4>
+          <a href="alaskacruises.html">Alaska Cruises</a>
+          <a href="#">Hawaiian Islands</a>
+          <a href="#">New England</a>
+          <h4>International</h4>
+          <a href="#">Caribbean</a>
+          <a href="#">Mexico</a>
+        </div>
+      </div>
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Cruise Lines <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Royal Caribbean</a>
+          <a href="#">Celebrity</a>
+          <a href="#">Norwegian</a>
+        </div>
+      </div>
+      <a href="#">Deals</a>
+      <a href="#">Experiences</a>
+      <a href="#">Plan</a>
+    </div>
+    <div class="mobile-footer">
+      <button class="mobile-book-btn">Book Now <i class="fas fa-chevron-right"></i></button>
+      <div class="mobile-contact">
+        <a href="tel:+19200222774"><i class="fas fa-phone-alt"></i> 1-920-022-2774</a>
+        <a href="#"><i class="fas fa-comment"></i> Live Chat</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+<!-- Alaska Cruise Hero Section with Parallax Effect -->
+<section class="alaska-cruise-hero" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2560&q=80');">
+  <div class="alaska-cruise-hero-overlay"></div>
+  <div class="alaska-cruise-container">
+    <div class="alaska-cruise-hero-content">
+      <h1 class="alaska-cruise-title">Sail Into Alaska's<br>Untamed Wilderness</h1>
+      <p class="alaska-cruise-subtitle">7-night luxury voyages through glacier-carved fjords with wildlife sightings guaranteed</p>
+      <div class="alaska-cruise-hero-buttons">
+        <a href="#alaska-cruise-itineraries" class="alaska-cruise-cta-button">Explore 2025 Cruises</a>
+        <a href="#alaska-cruise-video" class="alaska-cruise-cta-button secondary">Watch Video</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Alaska Cruise Video Section -->
+<section class="alaska-cruise-video-section" id="alaska-cruise-video">
+  <div class="alaska-cruise-container">
+    <div class="alaska-cruise-video-container">
+      <div class="alaska-cruise-video-content">
+        <h2 class="alaska-cruise-section-title">Experience Alaska Like Never Before</h2>
+        <p class="alaska-cruise-video-text">Our award-winning cruise line brings you closer to Alaska's majestic landscapes than any other. Watch our 4K documentary to see what awaits you.</p>
+        <div class="alaska-cruise-video-stats">
+          <div class="alaska-cruise-stat-item">
+            <span class="alaska-cruise-stat-number">98%</span>
+            <span class="alaska-cruise-stat-label">Whale Sighting Success</span>
+          </div>
+          <div class="alaska-cruise-stat-item">
+            <span class="alaska-cruise-stat-number">24/7</span>
+            <span class="alaska-cruise-stat-label">Naturalist Guides</span>
+          </div>
+          <div class="alaska-cruise-stat-item">
+            <span class="alaska-cruise-stat-number">100+</span>
+            <span class="alaska-cruise-stat-label">Glaciers Viewed</span>
+          </div>
+        </div>
+      </div>
+      <div class="alaska-cruise-video-wrapper">
+        <div class="alaska-cruise-video-placeholder">
+          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=c=crop&w=800&q=80" alt="Alaska cruise video thumbnail" class="alaska-cruise-video-thumbnail">
+          <div class="alaska-cruise-play-button"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alaska Cruise Highlights Section with 3D Cards -->
+<section class="alaska-cruise-highlights">
+  <div class="alaska-cruise-container">
+    <div class="alaska-cruise-section-header">
+      <h2 class="alaska-cruise-section-title">Your Alaskan Adventure Includes</h2>
+      <p class="alaska-cruise-section-subtitle">Every moment is crafted for discovery and wonder</p>
+    </div>
+    <div class="alaska-cruise-highlights-grid">
+      <div class="alaska-cruise-highlight-card">
+        <div class="alaska-cruise-card-inner">
+          <div class="alaska-cruise-card-front" style="background-image: url('https://images.unsplash.com/photo-1503177847378-d2048487fa46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');">
+            <h3 class="alaska-cruise-card-title">Glacier<br>Exploration</h3>
+          </div>
+          <div class="alaska-cruise-card-back">
+            <h4>Glacier Exploration</h4>
+            <p>Get within 1/4 mile of towering glaciers in our specially equipped expedition vessels with 360° viewing platforms.</p>
+            <ul class="alaska-cruise-card-list">
+              <li>Glacier Bay National Park</li>
+              <li>Hubbard Glacier</li>
+              <li>Tracy Arm Fjord</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- More 3D cards would follow the same pattern -->
+      <div class="alaska-cruise-highlight-card">
+        <div class="alaska-cruise-card-inner">
+          <div class="alaska-cruise-card-front" style="background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');">
+            <h3 class="alaska-cruise-card-title">Wildlife<br>Encounters</h3>
+          </div>
+          <div class="alaska-cruise-card-back">
+            <!-- Back content -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="alaska-cruise-highlight-card">
+        <div class="alaska-cruise-card-inner">
+          <div class="alaska-cruise-card-front" style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');">
+            <h3 class="alaska-cruise-card-title">Cultural<br>Immersion</h3>
+          </div>
+          <div class="alaska-cruise-card-back">
+            <!-- Back content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alaska Cruise Itinerary Map Section -->
+<section class="alaska-cruise-map-section" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2560&q=80');">
+  <div class="alaska-cruise-map-overlay"></div>
+  <div class="alaska-cruise-container">
+    <div class="alaska-cruise-map-content">
+      <h2 class="alaska-cruise-section-title">Navigate Alaska's<br>Iconic Waterways</h2>
+      <p class="alaska-cruise-map-text">Our expert captains choose routes based on real-time ice conditions and wildlife activity for optimal viewing opportunities.</p>
+      
+      <div class="alaska-cruise-map-features">
+        <div class="alaska-cruise-map-feature">
+          <div class="alaska-cruise-map-icon">🗺️</div>
+          <div class="alaska-cruise-map-feature-content">
+            <h4>Custom Navigation</h4>
+            <p>Routes adjusted daily for best wildlife and glacier viewing</p>
+          </div>
+        </div>
+        
+        <div class="alaska-cruise-map-feature">
+          <div class="alaska-cruise-map-icon">🛳️</div>
+          <div class="alaska-cruise-map-feature-content">
+            <h4>Small Ship Advantage</h4>
+            <p>Access remote fjords and bays larger ships can't reach</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="alaska-cruise-map-points">
+      <div class="alaska-cruise-map-point" style="top: 30%; left: 25%;">
+        <div class="alaska-cruise-map-marker"></div>
+        <div class="alaska-cruise-map-tooltip">
+          <h5>Glacier Bay</h5>
+          <p>Full day exploring this UNESCO World Heritage Site</p>
+        </div>
+      </div>
+      <!-- More map points would go here -->
+    </div>
+  </div>
+</section>
+
+<!-- Alaska Cruise Testimonials with 3D Effect -->
+<section class="alaska-cruise-testimonials">
+  <div class="alaska-cruise-container">
+    <div class="alaska-cruise-section-header">
+      <h2 class="alaska-cruise-section-title">Guest Experiences</h2>
+      <p class="alaska-cruise-section-subtitle">Don't just take our word for it</p>
+    </div>
+    
+    <div class="alaska-cruise-testimonial-cards">
+      <div class="alaska-cruise-testimonial-card">
+        <div class="alaska-cruise-testimonial-card-inner">
+          <div class="alaska-cruise-testimonial-card-front" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');">
+            <div class="alaska-cruise-testimonial-quote">"The most breathtaking vacation of our lives!"</div>
+          </div>
+          <div class="alaska-cruise-testimonial-card-back">
+            <blockquote>
+              "We saw over a dozen whales, including a mother and calf that swam alongside our ship for nearly an hour. The naturalists were incredibly knowledgeable and the small ship experience made all the difference."
+            </blockquote>
+            <div class="alaska-cruise-testimonial-author">
+              <strong>The Johnson Family</strong>
+              <span>July 2023 Cruise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- More testimonial cards would follow -->
+    </div>
+  </div>
+</section>
+
+<!-- Alaska Cruise Booking CTA with Floating Elements -->
+<section class="alaska-cruise-booking-cta" style="background-image: url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2560&q=80');">
+  <div class="alaska-cruise-booking-overlay"></div>
+  <div class="alaska-cruise-container">
+    <div class="alaska-cruise-booking-content">
+      <h2 class="alaska-cruise-section-title">Ready to Embark on Your Alaskan Journey?</h2>
+      <p class="alaska-cruise-booking-text">2025 season is booking fast - secure your cabin today with our flexible booking options.</p>
+      
+      <div class="alaska-cruise-booking-cards">
+        <div class="alaska-cruise-booking-card floating-animation">
+          <h3>Early Bird Special</h3>
+          <div class="alaska-cruise-booking-price">$1,299<span>per person</span></div>
+          <ul class="alaska-cruise-booking-features">
+            <li>Save up to 30%</li>
+            <li>Free cabin upgrade</li>
+            <li>Priority excursion booking</li>
+          </ul>
+          <a href="#" class="alaska-cruise-cta-button">Book Now</a>
+        </div>
+        
+        <div class="alaska-cruise-booking-card floating-animation-delay">
+          <div class="alaska-cruise-booking-badge">Most Popular</div>
+          <h3>All-Inclusive Package</h3>
+          <div class="alaska-cruise-booking-price">$2,199<span>per person</span></div>
+          <ul class="alaska-cruise-booking-features">
+            <li>All excursions included</li>
+            <li>Premium beverage package</li>
+            <li>Private balcony cabin</li>
+            <li>$500 onboard credit</li>
+          </ul>
+          <a href="#" class="alaska-cruise-cta-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Destinations Section -->
+<section class="featured-destinations">
+  <div class="destinations-container">
+    <div class="section-header">
+      <h2>Discover Our Featured Destinations</h2>
+      <p class="section-subtitle">Explore the most breathtaking locations on your next cruise adventure</p>
+    </div>
+    
+    <div class="destinations-grid">
+      <!-- Destination Card 1 -->
+      <div class="destination-card">
+        <div class="card-image">
+          <img src="./asset/alaska-glacier.jpeg" alt="Alaska Cruise" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Alaska Glaciers</h3>
+          <p>Witness majestic glaciers and wildlife in their natural habitat</p>
+          <a href="#" class="explore-btn">Explore Itinerary</a>
+        </div>
+        <div class="card-badge">Most Popular</div>
+      </div>
+      
+      <!-- Destination Card 2 -->
+      <div class="destination-card">
+        <div class="card-image">
+          <img src="./asset/carribean-cruise.avif" alt="Caribbean Cruise" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Caribbean Paradise</h3>
+          <p>Turquoise waters and white sandy beaches await you</p>
+          <a href="#" class="explore-btn">Explore Itinerary</a>
+        </div>
+      </div>
+      
+      <!-- Destination Card 3 -->
+      <div class="destination-card">
+        <div class="card-image">
+          <img src="./asset/mediterranean-cruise.jpg" alt="Mediterranean Cruise" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Mediterranean Gems</h3>
+          <p>Discover ancient history and vibrant cultures</p>
+          <a href="#" class="explore-btn">Explore Itinerary</a>
+        </div>
+        <div class="card-badge">New Route</div>
+      </div>
+    </div>
+    
+    <div class="view-all-container">
+      <a href="#" class="view-all-btn">View All Destinations</a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <div class="waves-overlay"></div>
+  <div class="choose-container">
+    <div class="choose-content">
+      <div class="section-header">
+        <h2>Why Choose <span>Cruisesphere</span></h2>
+        <p class="section-subtitle">We redefine cruise experiences with exceptional service and unforgettable journeys</p>
+      </div>
+      
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card" data-aos="fade-up">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          </div>
+          <h3>Premium Ships</h3>
+          <p>Our state-of-the-art fleet features the most advanced cruise ships with luxurious amenities</p>
+        </div>
+        
+        <!-- Benefit 2 -->
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          </div>
+          <h3>Safety First</h3>
+          <p>Industry-leading safety standards with 24/7 professional medical staff onboard</p>
+        </div>
+        
+        <!-- Benefit 3 -->
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/></svg>
+          </div>
+          <h3>All-Inclusive</h3>
+          <p>Enjoy worry-free cruising with our comprehensive all-inclusive packages</p>
+        </div>
+        
+        <!-- Benefit 4 -->
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/></svg>
+          </div>
+          <h3>Best Value</h3>
+          <p>Competitive pricing with price match guarantee and exclusive member deals</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="choose-visual">
+      <div class="cruise-ship">
+        <img src="./asset/cruiseship.jpg" alt="Cruisesphere Ship" loading="lazy">
+      </div>
+      <div class="water-effect"></div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+ <footer class="cruisesphere-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3 class="footer-logo">CruiseSphere</h3>
+        <p class="footer-about">Your gateway to unforgettable cruise experiences across the Mediterranean, Red Sea, and beyond. We specialize in luxury voyages with authentic Arabian hospitality.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section links-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mediterranean Cruises</a></li>
+          <li><a href="#">Red Sea Cruises</a></li>
+          <li><a href="#">Ship Facilities</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-section contact-section">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> CruiseSphere HQ, Jeddah, Saudi Arabia</li>
+          <li><i class="fas fa-phone"></i> +1 920-022-277</li>
+          <li><i class="fas fa-envelope"></i> info@cruisesphere.com</li>
+          <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="footer-section newsletter-section">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for exclusive deals and cruise updates</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2023 CruiseSphere. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Call Button -->
+<div class="floating-call-button">
+  <a href="tel:+966920022277" class="call-button">
+    <i class="fas fa-phone"></i>
+  </a>
+  <span class="call-text">Call Us</span>
+</div>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector('i');
+      
+      // Toggle current question
+      question.classList.toggle('active');
+      answer.classList.toggle('show');
+      icon.classList.toggle('fa-chevron-up');
+      
+      // Close other open answers
+      document.querySelectorAll('.faq-question').forEach(q => {
+        if (q !== question && q.classList.contains('active')) {
+          q.classList.remove('active');
+          q.nextElementSibling.classList.remove('show');
+          q.querySelector('i').classList.remove('fa-chevron-up');
+        }
+      });
+    });
+  });
+</script>
+
+  <script>
+    // Bounce animation for buttons
+    function bounce(btn) {
+      btn.classList.add("cruise-bounce");
+      setTimeout(() => btn.classList.remove("cruise-bounce"), 600);
+    }
+
+    // Countdown Timer
+    const countdown = () => {
+      const deadline = new Date();
+      deadline.setDate(deadline.getDate() + 9);
+      deadline.setHours(23, 59, 59, 0);
+
+      const updateCountdown = () => {
+        const now = new Date().getTime();
+        const distance = deadline - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+        if (distance < 0) {
+          clearInterval(countdownTimer);
+          document.getElementById('countdown').innerHTML = "<div class='expired'>Offer Expired!</div>";
+        }
+      };
+
+      updateCountdown();
+      const countdownTimer = setInterval(updateCountdown, 1000);
+    };
+
+    // Carousel functionality
+    let currentImage = 0;
+    const images = [
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80"
+    ];
+
+    const overlays = [
+      { title: "Mediterranean Majesty", subtitle: "7-Night Luxury Cruise" },
+      { title: "Khuzama Adventure", subtitle: "5-Night Desert Cruise" },
+      { title: "Caribbean Paradise", subtitle: "10-Night Tropical Escape" }
+    ];
+
+    function showImage(index) {
+      currentImage = (index + images.length) % images.length;
+      const img = document.getElementById("carouselImage");
+      img.src = images[currentImage];
+      
+      const overlay = document.querySelector(".carousel-overlay");
+      overlay.querySelector("h3").textContent = overlays[currentImage].title;
+      overlay.querySelector("p").textContent = overlays[currentImage].subtitle;
+      
+      // Update dots
+      document.querySelectorAll(".dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentImage);
+      });
+    }
+
+    function prevImage() {
+      showImage(currentImage - 1);
+    }
+
+    function nextImage() {
+      showImage(currentImage + 1);
+    }
+
+    function currentSlide(index) {
+      showImage(index);
+    }
+
+    // Auto-rotate carousel
+    let carouselInterval = setInterval(nextImage, 5000);
+
+    function resetCarouselInterval() {
+      clearInterval(carouselInterval);
+      carouselInterval = setInterval(nextImage, 5000);
+    }
+
+    document.querySelectorAll('.cruise-arrow, .dot').forEach(element => {
+      element.addEventListener('click', resetCarouselInterval);
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("show");
+      document.body.classList.toggle("no-scroll");
+    }
+
+    // Tab switching
+    function switchTab(index) {
+      document.querySelectorAll('.cruise-tab').forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+      });
+      
+      document.querySelector('.cruise-search-form').classList.toggle('active', index === 0);
+      document.querySelector('.cruise-manage-form').classList.toggle('active', index === 1);
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      countdown();
+      showImage(0);
+    });
+
+
+    /* Remarkable section*/
+      function toggleCard(card) {
+    // Close all other open cards first
+    document.querySelectorAll('.cruise-card').forEach(item => {
+      if (item !== card && item.classList.contains('expanded')) {
+        item.classList.remove('expanded');
+      }
+    });
+    
+    // Toggle the clicked card
+    card.classList.toggle('expanded');
+  }
+
+  // Header
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
+  }
+
+  // Mobile dropdown functionality
+  document.querySelectorAll('.dropdown-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.parentElement.classList.toggle('active');
+    });
+  });
+  </script>
+</body>
+</html>
