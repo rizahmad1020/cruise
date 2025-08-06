@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛳️</text></svg>">
+  <title>CruiseSphere | Luxury Cruise Vacations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaskacruises.html">Alaska Cruises</a>
+                <a href="#">Hawaiian Islands</a>
+                <a href="#">New England</a>
+                <a href="#">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="#">Caribbean</a>
+                <a href="#">Mexico</a>
+                <a href="#">Bahamas</a>
+                <a href="#">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Royal Caribbean</a>
+              <a href="#">Celebrity</a>
+              <a href="#">Norwegian</a>
+              <a href="#">Carnival</a>
+              <a href="#">Disney</a>
+            </div>
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="user-btn"><i class="fas fa-user-circle"></i> <span>Sign In</span></button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <i class="fas fa-ship"></i> CruiseSphere
+      </div>
+      <button class="close-btn" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Destinations <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <h4>USA Departures</h4>
+          <a href="alaskacruises.html">Alaska Cruises</a>
+          <a href="#">Hawaiian Islands</a>
+          <a href="#">New England</a>
+          <h4>International</h4>
+          <a href="#">Caribbean</a>
+          <a href="#">Mexico</a>
+        </div>
+      </div>
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Cruise Lines <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Royal Caribbean</a>
+          <a href="#">Celebrity</a>
+          <a href="#">Norwegian</a>
+        </div>
+      </div>
+      <a href="#">Deals</a>
+      <a href="#">Experiences</a>
+      <a href="#">Plan</a>
+    </div>
+    <div class="mobile-footer">
+      <button class="mobile-book-btn">Book Now <i class="fas fa-chevron-right"></i></button>
+      <div class="mobile-contact">
+        <a href="tel:+19200222774"><i class="fas fa-phone-alt"></i> 1-920-022-2774</a>
+        <a href="#"><i class="fas fa-comment"></i> Live Chat</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add this section between your header and footer -->
+<section class="cs-caribbean-hero">
+    <div class="cs-hero-overlay">
+        <h1 class="cs-main-title">Caribbean Paradise Cruises</h1>
+        <p class="cs-hero-subtitle">Discover crystal waters, white sands, and tropical bliss</p>
+        <a href="#cs-caribbean-itineraries" class="cs-explore-btn">Explore Journeys</a>
+    </div>
+</section>
+
+<section class="cs-caribbean-intro">
+    <div class="cs-container">
+        <h2 class="cs-section-title">Your Dream Caribbean Escape</h2>
+        <p class="cs-intro-text">Sail into paradise with CruiseSphere America's exclusive Caribbean voyages. From the vibrant culture of Jamaica to the pristine beaches of the Bahamas, our Caribbean cruises offer the perfect blend of relaxation and adventure. Enjoy world-class amenities aboard our luxury ships while exploring the most breathtaking islands on earth.</p>
+        
+        <div class="cs-highlight-cards">
+            <div class="cs-highlight-card cs-card-3d">
+                <img src="https://www.travelandleisure.com/thmb/XGn_pf73ImYO7PzDrHVbFTSVngg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bavaro-beach-dominican-republic-CARIBBEACHES0721-e885a60366704190a996269843ecd778.jpg" alt="Caribbean Beach" class="cs-card-img">
+                <h3>Pristine Beaches</h3>
+                <p>Step onto powdery white sands and swim in turquoise waters at our carefully selected ports.</p>
+            </div>
+            <div class="cs-highlight-card cs-card-3d">
+                <img src="https://www.worldatlas.com/r/w1200/upload/04/c6/80/shutterstock-466775990.jpg" alt="Caribbean Culture" class="cs-card-img">
+                <h3>Rich Culture</h3>
+                <p>Experience vibrant music, delicious cuisine, and warm hospitality at every destination.</p>
+            </div>
+            <div class="cs-highlight-card cs-card-3d">
+                <img src="https://lp-cms-production.imgix.net/2021-10/Kayaking%20in%20the%20Caribbean%20Sea%20Antionio%20Busiello%20GettyImages-1167011568%20rfc.jpg?auto=format,compress&q=72&w=1095&fit=crop&crop=faces,edges" alt="Caribbean Activities" class="cs-card-img">
+                <h3>Endless Activities</h3>
+                <p>From snorkeling coral reefs to zip-lining through rainforests, adventure awaits.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cs-caribbean-itineraries" id="cs-caribbean-itineraries">
+    <div class="cs-container">
+        <h2 class="cs-section-title">Featured Caribbean Itineraries</h2>
+        <p class="cs-section-subtitle">Choose your perfect island-hopping adventure</p>
+        
+        <div class="cs-itinerary-grid">
+            <!-- Itinerary 1 -->
+            <div class="cs-itinerary-card cs-card-3d-hover">
+                <div class="cs-itinerary-img-container">
+                    <img src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/content/destinations/eastern-caribbean/caribbean-seaside-fort.jpg?$1440x600$" alt="Eastern Caribbean" class="cs-itinerary-img">
+                    <span class="cs-duration">7 Days</span>
+                </div>
+                <div class="cs-itinerary-content">
+                    <h3>Eastern Caribbean Gems</h3>
+                    <ul class="cs-port-list">
+                        <li>St. Thomas, USVI</li>
+                        <li>St. Maarten</li>
+                        <li>Puerto Rico</li>
+                        <li>Private Island</li>
+                    </ul>
+                    <div class="cs-price-from">From $899/person</div>
+                    <a href="#" class="cs-book-now">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Itinerary 2 -->
+            <div class="cs-itinerary-card cs-card-3d-hover">
+                <div class="cs-itinerary-img-container">
+                    <img src="https://allatsea.s3-accelerate.amazonaws.com/2023/01/Little-Cayman-Island-Courtesy-Cayman-Islands-Tourism-e1674620799770.jpg" alt="Western Caribbean" class="cs-itinerary-img">
+                    <span class="cs-duration">8 Days</span>
+                </div>
+                <div class="cs-itinerary-content">
+                    <h3>Western Caribbean Adventure</h3>
+                    <ul class="cs-port-list">
+                        <li>Cozumel, Mexico</li>
+                        <li>Grand Cayman</li>
+                        <li>Roatan, Honduras</li>
+                        <li>Belize City</li>
+                    </ul>
+                    <div class="cs-price-from">From $999/person</div>
+                    <a href="#" class="cs-book-now">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Itinerary 3 -->
+            <div class="cs-itinerary-card cs-card-3d-hover">
+                <div class="cs-itinerary-img-container">
+                    <img src="https://www.envoyage.com/sites/default/files/styles/full_size/public/LT1023323551-BLOG-southern_caribbean_focus_top_1920x1080.jpg?itok=BSyMoPfi" alt="Southern Caribbean" class="cs-itinerary-img">
+                    <span class="cs-duration">10 Days</span>
+                </div>
+                <div class="cs-itinerary-content">
+                    <h3>Southern Caribbean Explorer</h3>
+                    <ul class="cs-port-list">
+                        <li>Aruba</li>
+                        <li>Bonaire</li>
+                        <li>Curaçao</li>
+                        <li>Grenada</li>
+                        <li>Barbados</li>
+                    </ul>
+                    <div class="cs-price-from">From $1,299/person</div>
+                    <a href="#" class="cs-book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cs-caribbean-experiences">
+    <div class="cs-container">
+        <h2 class="cs-section-title">Unforgettable Caribbean Experiences</h2>
+        
+        <div class="cs-experience-tabs">
+            <div class="cs-tab-buttons">
+                <button class="cs-tab-btn active" data-tab="dining">Gourmet Dining</button>
+                <button class="cs-tab-btn" data-tab="entertainment">Entertainment</button>
+                <button class="cs-tab-btn" data-tab="excursions">Shore Excursions</button>
+                <button class="cs-tab-btn" data-tab="wellness">Wellness</button>
+            </div>
+            
+            <div class="cs-tab-content active" id="dining">
+                <div class="cs-tab-content-inner">
+                    <img src="https://www.royalcaribbeanincentives.com/content/uploads/RCI_VY_MainDiningRoom-1-720x432.jpg" alt="Caribbean Dining" class="cs-tab-img">
+                    <div class="cs-tab-text">
+                        <h3>Savor Caribbean Flavors</h3>
+                        <p>Indulge in exquisite dining options featuring fresh seafood, tropical fruits, and Caribbean-inspired cuisine. Our ships offer everything from casual beachfront grills to elegant fine dining with ocean views. Don't miss our signature rum tastings and mixology classes featuring local spirits.</p>
+                        <ul class="cs-feature-list">
+                            <li>Chef's Table with Caribbean tasting menu</li>
+                            <li>Fresh seafood caught daily in port</li>
+                            <li>Jerk chicken stations on pool deck</li>
+                            <li>24-hour room service with local specialties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cs-tab-content" id="entertainment">
+                <div class="cs-tab-content-inner">
+                    <img src="images/caribbean-entertainment.jpg" alt="Caribbean Entertainment" class="cs-tab-img">
+                    <div class="cs-tab-text">
+                        <h3>Vibrant Nightlife & Shows</h3>
+                        <p>As the sun sets, the Caribbean comes alive with music and dance. Enjoy Broadway-style productions, live calypso bands, and deck parties under the stars. Our entertainment team brings the spirit of the islands onboard with interactive experiences you won't find anywhere else.</p>
+                        <ul class="cs-feature-list">
+                            <li>Broadway-caliber musical productions</li>
+                            <li>Live steel drum performances</li>
+                            <li>Caribbean carnival night with costumes</li>
+                            <li>Comedy clubs featuring island humor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cs-tab-content" id="excursions">
+                <div class="cs-tab-content-inner">
+                    <img src="images/caribbean-excursions.jpg" alt="Caribbean Excursions" class="cs-tab-img">
+                    <div class="cs-tab-text">
+                        <h3>Adventure Awaits Ashore</h3>
+                        <p>From swimming with dolphins to exploring ancient Mayan ruins, our carefully curated shore excursions showcase the best of each destination. Choose from adrenaline-pumping adventures, cultural immersions, or simply relaxing on some of the world's most beautiful beaches.</p>
+                        <ul class="cs-feature-list">
+                            <li>Snorkeling in pristine coral reefs</li>
+                            <li>Rainforest zip-lining adventures</li>
+                            <li>Historic island tours with local guides</li>
+                            <li>Private beach cabana rentals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cs-tab-content" id="wellness">
+                <div class="cs-tab-content-inner">
+                    <img src="images/caribbean-wellness.jpg" alt="Caribbean Wellness" class="cs-tab-img">
+                    <div class="cs-tab-text">
+                        <h3>Relax & Rejuvenate</h3>
+                        <p>Find your paradise at our world-class spa facilities featuring Caribbean-inspired treatments. Enjoy ocean-view yoga sessions, aromatherapy with tropical scents, and massage techniques borrowed from island traditions. Our wellness programs help you return home refreshed in body and spirit.</p>
+                        <ul class="cs-feature-list">
+                            <li>Oceanfront spa with treatment cabanas</li>
+                            <li>Sunrise yoga on the top deck</li>
+                            <li>Coconut oil massage therapies</li>
+                            <li>Detox programs with tropical superfoods</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cs-destination-spotlight">
+    <div class="cs-container">
+        <h2 class="cs-section-title">Caribbean Destination Spotlight</h2>
+        <p class="cs-section-subtitle">Explore these breathtaking ports of call in stunning 3D</p>
+        
+        <div class="cs-destination-grid">
+            <!-- Destination 1 - 3D Flip Card -->
+            <div class="cs-destination-card">
+                <div class="cs-destination-card-inner">
+                    <div class="cs-destination-card-front" style="background-image: url('https://www.travelandleisure.com/thmb/iK4RU8af4N5FyI0fK3nPryTZDok=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-aerial-paradise-island-nassau-bahamas-BAHAMAISLE1023-d1de28fffe9546d994288f02b0eb7c46.jpg')">
+                        <div class="cs-destination-overlay">
+                            <h3>The Bahamas</h3>
+                            <div class="cs-destination-icon">🏝️</div>
+                        </div>
+                    </div>
+                    <div class="cs-destination-card-back">
+                        <h3>Nassau, Bahamas</h3>
+                        <ul class="cs-destination-features">
+                            <li>World-famous Atlantis Resort</li>
+                            <li>Pristine Pink Sand Beaches</li>
+                            <li>Swim with Dolphins</li>
+                            <li>Historic Pirates Museum</li>
+                        </ul>
+                        <div class="cs-best-time">Best Time to Visit: Nov-Apr</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 2 - 3D Flip Card -->
+            <div class="cs-destination-card">
+                <div class="cs-destination-card-inner">
+                    <div class="cs-destination-card-front" style="background-image: url('https://www.palladiumhotelgroup.com/content/dam/palladium/images/guias-destino/jamaica/slider/slider-jamaica.jpg.transform/rendition-md/image.jpg')">
+                        <div class="cs-destination-overlay">
+                            <h3>Jamaica</h3>
+                            <div class="cs-destination-icon">🌴</div>
+                        </div>
+                    </div>
+                    <div class="cs-destination-card-back">
+                        <h3>Montego Bay, Jamaica</h3>
+                        <ul class="cs-destination-features">
+                            <li>Dunn's River Falls Climb</li>
+                            <li>Authentic Jerk Cuisine</li>
+                            <li>Luminous Lagoon</li>
+                            <li>Reggae Culture Tours</li>
+                        </ul>
+                        <div class="cs-best-time">Best Time to Visit: Dec-Apr</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 3 - 3D Flip Card -->
+            <div class="cs-destination-card">
+                <div class="cs-destination-card-inner">
+                    <div class="cs-destination-card-front" style="background-image: url('https://ik.imgkit.net/3vlqs5axxjf/TW/ik-seo/uploadedImages/Art/2025/0616/T0616SECRETSSTLUCIA_C_HR/St.-Lucia-gets-its-first-Secrets-resort.jpg?n=1461&tr=w-780%2Ch-440%2Cfo-auto')">
+                        <div class="cs-destination-overlay">
+                            <h3>St. Lucia</h3>
+                            <div class="cs-destination-icon">⛰️</div>
+                        </div>
+                    </div>
+                    <div class="cs-destination-card-back">
+                        <h3>Castries, St. Lucia</h3>
+                        <ul class="cs-destination-features">
+                            <li>Iconic Pitons Mountains</li>
+                            <li>Volcanic Mud Baths</li>
+                            <li>Rainforest Aerial Tram</li>
+                            <li>Chocolate Plantation Tours</li>
+                        </ul>
+                        <div class="cs-best-time">Best Time to Visit: Jan-Apr</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 4 - 3D Flip Card -->
+            <div class="cs-destination-card">
+                <div class="cs-destination-card-inner">
+                    <div class="cs-destination-card-front" style="background-image: url('https://imageio.forbes.com/specials-images/imageserve/663018cacb35e60737c0c201/Cruz-Bay--St-John/0x0.jpg?format=jpg&height=1362&width=2043')">
+                        <div class="cs-destination-overlay">
+                            <h3>U.S. Virgin Islands</h3>
+                            <div class="cs-destination-icon">🏖️</div>
+                        </div>
+                    </div>
+                    <div class="cs-destination-card-back">
+                        <h3>St. Thomas, USVI</h3>
+                        <ul class="cs-destination-features">
+                            <li>Magens Bay Beach</li>
+                            <li>Duty-Free Shopping</li>
+                            <li>Paradise Point Tramway</li>
+                            <li>Snorkeling at Coral World</li>
+                        </ul>
+                        <div class="cs-best-time">Best Time to Visit: Apr-Jun</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cs-view-all-destinations">
+            <a href="#" class="cs-view-all-btn">View All Caribbean Destinations</a>
+        </div>
+    </div>
+</section>
+
+<section class="cs-caribbean-testimonials">
+    <div class="cs-container">
+        <h2 class="cs-section-title">Guest Experiences</h2>
+        <p class="cs-section-subtitle">Hear what our travelers say about their Caribbean adventures</p>
+        
+        <div class="cs-testimonial-slider">
+            <div class="cs-testimonial-slide cs-card-3d">
+                <div class="cs-testimonial-content">
+                    <img src="https://static.thenounproject.com/png/14163-200.png" alt="Quote" class="cs-quote-icon">
+                    <p class="cs-testimonial-text">"The Eastern Caribbean cruise exceeded all expectations! The staff went above and beyond to make our anniversary special. The private island stop was absolute paradise - we didn't want to leave!"</p>
+                    <div class="cs-testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1599842057874-37393e9342df?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1lcmljYW4lMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D" alt="Sarah J." class="cs-author-img">
+                        <div class="cs-author-info">
+                            <h4>Amelia Clark</h4>
+                            <p>Miami, Florida</p>
+                            <div class="cs-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cs-testimonial-slide cs-card-3d">
+                <div class="cs-testimonial-content">
+                    <img src="https://static.thenounproject.com/png/14163-200.png" alt="Quote" class="cs-quote-icon">
+                    <p class="cs-testimonial-text">"As a family of five, we loved the variety of activities for all ages. The kids enjoyed the pirate-themed water park while we relaxed on the adults-only deck. Perfect balance!"</p>
+                    <div class="cs-testimonial-author">
+                        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-06/8/15/asset/buzzfeed-prod-web-01/sub-buzz-19945-1528486703-7.jpg?downsize=900:*&output-format=auto&output-quality=auto" alt="The Rodriguez Family" class="cs-author-img">
+                        <div class="cs-author-info">
+                            <h4>Elish</h4>
+                            <p>Houston, Texas</p>
+                            <div class="cs-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cs-testimonial-slide cs-card-3d">
+                <div class="cs-testimonial-content">
+                    <img src="https://static.thenounproject.com/png/14163-200.png" alt="Quote" class="cs-quote-icon">
+                    <p class="cs-testimonial-text">"The food was incredible - especially the fresh seafood options. We took the rum distillery tour in Puerto Rico and it was the highlight of our trip. Already planning our next Caribbean cruise!"</p>
+                    <div class="cs-testimonial-author">
+                        <img src="https://img.freepik.com/free-photo/man-wrapped-american-flag-standing-beach_107420-10055.jpg?semt=ais_hybrid&w=740&q=80" alt="Mark & Linda T." class="cs-author-img">
+                        <div class="cs-author-info">
+                            <h4>Mark & Linda T.</h4>
+                            <p>Chicago, Illinois</p>
+                            <div class="cs-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cs-caribbean-cta">
+    <div class="cs-container">
+        <div class="cs-cta-content">
+            <h2 class="cs-cta-title">Ready for Your Caribbean Escape?</h2>
+            <p class="cs-cta-text">Limited-time offer: Book by August 31st and receive up to $500 onboard credit plus a free shore excursion!</p>
+            <div class="cs-cta-buttons">
+                <a href="#" class="cs-cta-btn cs-primary-btn">Book Your Cruise Now</a>
+                <a href="#" class="cs-cta-btn cs-secondary-btn">Request a Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<footer class="cruisesphere-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3 class="footer-logo">CruiseSphere</h3>
+        <p class="footer-about">Your gateway to unforgettable cruise experiences across the Mediterranean, Red Sea, and beyond. We specialize in luxury voyages with authentic American hospitality.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section links-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mediterranean Cruises</a></li>
+          <li><a href="#">Red Sea Cruises</a></li>
+          <li><a href="#">Ship Facilities</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-section contact-section">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> CruiseSphere HQ, New York, America</li>
+          <li><i class="fas fa-phone"></i> +1 920-022-277</li>
+          <li><i class="fas fa-envelope"></i> info@cruisesphere.com</li>
+          <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="footer-section newsletter-section">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for exclusive deals and cruise updates</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2023 CruiseSphere. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+  </body>
+  </html>

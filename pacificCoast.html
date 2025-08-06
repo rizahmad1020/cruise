@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛳️</text></svg>">
+  <title>CruiseSphere | Luxury Cruise Vacations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaskacruises.html">Alaska Cruises</a>
+                <a href="hawaiianIsland.html">Hawaiian Islands</a>
+                <a href="NewEngland.html">New England</a>
+                <a href="pacificCoast.html">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="#">Caribbean</a>
+                <a href="#">Mexico</a>
+                <a href="#">Bahamas</a>
+                <a href="#">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Royal Caribbean</a>
+              <a href="#">Celebrity</a>
+              <a href="#">Norwegian</a>
+              <a href="#">Carnival</a>
+              <a href="#">Disney</a>
+            </div>
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="user-btn"><i class="fas fa-user-circle"></i> <span>Sign In</span></button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <i class="fas fa-ship"></i> CruiseSphere
+      </div>
+      <button class="close-btn" onclick="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Destinations <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <h4>USA Departures</h4>
+          <a href="alaskacruises.html">Alaska Cruises</a>
+          <a href="hawaiianIsland.html">Hawaiian Islands</a>
+          <a href="NewEngland.html">New England</a>
+          <a href="pacificCoast.html">Pacific Coast</a>
+          <h4>International</h4>
+          <a href="#">Caribbean</a>
+          <a href="#">Mexico</a>
+        </div>
+      </div>
+      <div class="dropdown-mobile">
+        <button class="dropdown-btn">Cruise Lines <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Royal Caribbean</a>
+          <a href="#">Celebrity</a>
+          <a href="#">Norwegian</a>
+        </div>
+      </div>
+      <a href="#">Deals</a>
+      <a href="#">Experiences</a>
+      <a href="#">Plan</a>
+    </div>
+    <div class="mobile-footer">
+      <button class="mobile-book-btn">Book Now <i class="fas fa-chevron-right"></i></button>
+      <div class="mobile-contact">
+        <a href="tel:+19200222774"><i class="fas fa-phone-alt"></i> 1-920-022-2774</a>
+        <a href="#"><i class="fas fa-comment"></i> Live Chat</a>
+      </div>
+      <div class="mobile-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pacific Coast Section - Insert this between your header and footer -->
+<section class="pc-main-section">
+  <div class="pc-hero-banner">
+    <div class="pc-hero-overlay">
+      <h1 class="pc-hero-title">Pacific Coast Cruises</h1>
+      <p class="pc-hero-subtitle">Discover the stunning beauty of America's West Coast</p>
+      <a href="#pc-itineraries" class="pc-cta-button">Explore Itineraries</a>
+    </div>
+  </div>
+
+  <div class="pc-intro-section">
+    <div class="pc-container">
+      <h2 class="pc-section-title">Sail Along the Scenic Pacific Coast</h2>
+      <p class="pc-section-text">Experience the magic of the Pacific coastline with its rugged cliffs, charming coastal towns, and breathtaking sunsets. Our Pacific Coast cruises offer the perfect blend of relaxation and adventure, with opportunities to explore vibrant cities like San Diego, San Francisco, and Seattle, as well as hidden gems along the way.</p>
+      <div class="pc-highlight-box">
+        <div class="pc-highlight-item">
+          <img src="https://awionline.org/sites/default/files/styles/art/public/page/image/whalewatching_flickr_Wade%20Tregaskis.jpg?itok=snS1WH8p" alt="Whale watching" class="pc-highlight-icon">
+          <h3>Whale Watching</h3>
+          <p>Spot majestic gray whales during their migration</p>
+        </div>
+        <div class="pc-highlight-item">
+          <img src="https://resizing.flixster.com/_I7a9SoSb8WpfuF0RfALi_qI2-U=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16805087_i_h9_aa.jpg" alt="Wine country" class="pc-highlight-icon">
+          <h3>Wine Country</h3>
+          <p>Visit famous California vineyards</p>
+        </div>
+        <div class="pc-highlight-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/f6/57/f1/golden-beach-view-from.jpg?w=1200&h=-1&s=1" alt="Beaches" class="pc-highlight-icon">
+          <h3>Golden Beaches</h3>
+          <p>Relax on beautiful sandy shores</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-featured-ports" id="pc-itineraries">
+    <div class="pc-container">
+      <h2 class="pc-section-title">Featured Ports of Call</h2>
+      <div class="pc-ports-grid">
+        <div class="pc-port-card">
+          <img src="https://a.storyblok.com/f/239725/1440x832/c291970f71/01_us_sandiego_hero.png/m/3840x2219" alt="San Diego" class="pc-port-image">
+          <div class="pc-port-content">
+            <h3>San Diego, California</h3>
+            <p>Explore the historic Gaslamp Quarter, visit the world-famous San Diego Zoo, or relax on Coronado Beach with its iconic Hotel del Coronado.</p>
+            <ul class="pc-port-activities">
+              <li>Balboa Park museums</li>
+              <li>USS Midway Museum</li>
+              <li>La Jolla sea caves</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="pc-port-card">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f4/10/5a/santa-barbara-inn.jpg?w=900&h=500&s=1" alt="Santa Barbara" class="pc-port-image">
+          <div class="pc-port-content">
+            <h3>Santa Barbara, California</h3>
+            <p>Known as the "American Riviera," Santa Barbara offers Spanish colonial architecture, excellent wine tasting, and beautiful beaches.</p>
+            <ul class="pc-port-activities">
+              <li>Stearns Wharf</li>
+              <li>Mission Santa Barbara</li>
+              <li>Funk Zone art district</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="pc-port-card">
+          <img src="https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg" alt="San Francisco" class="pc-port-image">
+          <div class="pc-port-content">
+            <h3>San Francisco, California</h3>
+            <p>The iconic Golden Gate Bridge, Alcatraz Island, cable cars, and Fisherman's Wharf make this one of America's most beloved cities.</p>
+            <ul class="pc-port-activities">
+              <li>Golden Gate Park</li>
+              <li>Chinatown</li>
+              <li>Muir Woods</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="pc-port-card">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/34/00/d8/astoria.jpg?w=1200&h=700&s=1" alt="Astoria" class="pc-port-image">
+          <div class="pc-port-content">
+            <h3>Astoria, Oregon</h3>
+            <p>Where the Columbia River meets the Pacific, this historic town offers maritime museums, Victorian homes, and stunning coastal views.</p>
+            <ul class="pc-port-activities">
+              <li>Columbia River Maritime Museum</li>
+              <li>Astoria Column</li>
+              <li>Fort Stevens State Park</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-cruise-options">
+    <div class="pc-container">
+      <h2 class="pc-section-title">Our Pacific Coast Cruise Options</h2>
+      <div class="pc-options-tabs">
+        <button class="pc-tab-button active" data-tab="pc-coastal">Coastal Getaways</button>
+        <button class="pc-tab-button" data-tab="pc-wine">Wine Country Cruises</button>
+        <button class="pc-tab-button" data-tab="pc-panoramic">Panoramic Journeys</button>
+      </div>
+      
+      <div class="pc-tab-content active" id="pc-coastal">
+        <div class="pc-cruise-card">
+          <img src="https://media.california.com/media/_versions_jpg/articles/shutterstock_127554866__5186x3458____v1222x580__.jpg" alt="Coastal Cruise" class="pc-cruise-image">
+          <div class="pc-cruise-details">
+            <h3>California Coastal</h3>
+            <p class="pc-cruise-duration">7 Nights | Roundtrip from Los Angeles</p>
+            <p class="pc-cruise-description">This classic Pacific Coast cruise visits San Diego, Santa Barbara, San Francisco, and Ensenada (Mexico), with two relaxing days at sea to enjoy onboard amenities.</p>
+            <div class="pc-cruise-highlights">
+              <span>Best for:</span>
+              <ul>
+                <li>First-time cruisers</li>
+                <li>Families</li>
+                <li>Short getaways</li>
+              </ul>
+            </div>
+            <a href="#" class="pc-cta-button">View Itinerary</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pc-tab-content" id="pc-wine">
+        <div class="pc-cruise-card">
+          <img src="https://example.com/images/wine-cruise.jpg" alt="Wine Country Cruise" class="pc-cruise-image">
+          <div class="pc-cruise-details">
+            <h3>Pacific Wine Country</h3>
+            <p class="pc-cruise-duration">10 Nights | San Diego to Vancouver</p>
+            <p class="pc-cruise-description">A connoisseur's dream, featuring extended stops in Santa Barbara (Santa Ynez Valley), San Francisco (Napa/Sonoma), and Portland (Willamette Valley) with guided wine tours included.</p>
+            <div class="pc-cruise-highlights">
+              <span>Best for:</span>
+              <ul>
+                <li>Wine enthusiasts</li>
+                <li>Foodies</li>
+                <li>Romantic getaways</li>
+              </ul>
+            </div>
+            <a href="#" class="pc-cta-button">View Itinerary</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pc-tab-content" id="pc-panoramic">
+        <div class="pc-cruise-card">
+          <img src="https://example.com/images/panoramic-cruise.jpg" alt="Panoramic Cruise" class="pc-cruise-image">
+          <div class="pc-cruise-details">
+            <h3>Pacific Panorama</h3>
+            <p class="pc-cruise-duration">14 Nights | Los Angeles to Seattle</p>
+            <p class="pc-cruise-description">Our most comprehensive Pacific Coast itinerary, featuring all major ports plus lesser-known gems like Monterey, Eureka, and Victoria BC, with scenic cruising along the Oregon coast.</p>
+            <div class="pc-cruise-highlights">
+              <span>Best for:</span>
+              <ul>
+                <li>In-depth exploration</li>
+                <li>Photography</li>
+                <li>Nature lovers</li>
+              </ul>
+            </div>
+            <a href="#" class="pc-cta-button">View Itinerary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Wildlife & Nature Section - Add this before the testimonials section -->
+<section class="pc-wildlife-section">
+  <div class="pc-container">
+    <h2 class="pc-section-title">Wildlife & Nature Experiences</h2>
+    <p class="pc-section-intro">The Pacific Coast is home to some of North America's most spectacular wildlife and natural wonders. From migrating whales to ancient redwoods, our cruises offer unparalleled opportunities to connect with nature.</p>
+    
+    <div class="pc-wildlife-grid">
+      <div class="pc-wildlife-card pc-wildlife-featured">
+        <div class="pc-wildlife-image-wrapper">
+          <img src="https://www.northsailing.is/wp-content/uploads/2022/02/Humpback_jumping_near_Husavik_06-1-lenging.jpg" alt="Whale watching" class="pc-wildlife-image">
+          <div class="pc-wildlife-badge">Most Popular</div>
+        </div>
+        <div class="pc-wildlife-content">
+          <h3>Whale Watching Adventures</h3>
+          <p>Witness the incredible migration of gray whales (December-April) or spot humpbacks and orcas (May-November). Our naturalist guides will help you spot these magnificent creatures and explain their behaviors.</p>
+          <ul class="pc-wildlife-facts">
+            <li>Best viewing spots: Monterey Bay, Channel Islands, Juan de Fuca Strait</li>
+            <li>Onboard spotting scopes and expert commentary</li>
+            <li>Guaranteed whale sightings or receive a future cruise credit</li>
+          </ul>
+          <a href="#" class="pc-cta-button pc-small">Learn About Excursions</a>
+        </div>
+      </div>
+      
+      <div class="pc-wildlife-cards-group">
+        <div class="pc-wildlife-card">
+          <img src="https://drupal-prod.visitcalifornia.com/sites/default/files/styles/fluid_1920/public/cn_blog_waystoexplorecaliforniaredwoods_st_rm_e1tygr_816x544.jpg.webp?itok=Nmw81FK1" alt="Redwood forests" class="pc-wildlife-image">
+          <div class="pc-wildlife-content">
+            <h3>Redwood Forest Exploration</h3>
+            <p>Walk among giants in the ancient coastal redwood forests. Our excursions to Muir Woods or Humboldt Redwoods State Park include guided walks and photography tips.</p>
+            <div class="pc-wildlife-meta">
+              <span class="pc-meta-item"><i class="pc-icon-tree"></i> Trees over 2,000 years old</span>
+              <span class="pc-meta-item"><i class="pc-icon-hike"></i> Easy to moderate trails</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pc-wildlife-card">
+          <img src="https://www.thoughtco.com/thmb/kVIvT0goZ7VemCa0scTO1SFZM6k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tidepoolcalifornia-56d388613df78cfb37d38e26-5c4a0e294cedfd0001783159.jpg" alt="Tide pools" class="pc-wildlife-image">
+          <div class="pc-wildlife-content">
+            <h3>Tide Pool Discoveries</h3>
+            <p>Explore vibrant intertidal ecosystems at low tide. See sea stars, anemones, and other marine life up close with our marine biologist guides.</p>
+            <div class="pc-wildlife-meta">
+              <span class="pc-meta-item"><i class="pc-icon-tide"></i> Best at morning low tides</span>
+              <span class="pc-meta-item"><i class="pc-icon-family"></i> Great for families</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pc-wildlife-card">
+          <img src="https://www.fisheries.noaa.gov/s3//styles/original/s3/dam-migration/california-thumb.jpg?itok=p-SUPvv1" alt="Sea lions" class="pc-wildlife-image">
+          <div class="pc-wildlife-content">
+            <h3>Seal & Sea Lion Colonies</h3>
+            <p>Visit bustling sea mammal rookeries at places like La Jolla or Pier 39 in San Francisco. Hear their distinctive calls and watch their playful antics.</p>
+            <div class="pc-wildlife-meta">
+              <span class="pc-meta-item"><i class="pc-icon-binoculars"></i> Prime viewing year-round</span>
+              <span class="pc-meta-item"><i class="pc-icon-pup"></i> Pup season in spring</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pc-wildlife-card">
+          <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/02/bird-watching-1488170889.jpg" alt="Bird watching" class="pc-wildlife-image">
+          <div class="pc-wildlife-content">
+            <h3>Coastal Bird Watching</h3>
+            <p>The Pacific Flyway attracts millions of migratory birds. Spot pelicans, cormorants, puffins, and maybe even the endangered California condor.</p>
+            <div class="pc-wildlife-meta">
+              <span class="pc-meta-item"><i class="pc-icon-binoculars"></i> Bring your binoculars</span>
+              <span class="pc-meta-item"><i class="pc-icon-checklist"></i> Bird checklist provided</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pc-seasonal-guide">
+      <h3 class="pc-guide-title">Seasonal Wildlife Guide</h3>
+      <div class="pc-seasonal-grid">
+        <div class="pc-season">
+          <h4>Winter (Dec-Feb)</h4>
+          <ul>
+            <li>Gray whale migration south</li>
+            <li>Elephant seals breeding</li>
+            <li>Bald eagles nesting</li>
+          </ul>
+        </div>
+        <div class="pc-season">
+          <h4>Spring (Mar-May)</h4>
+          <ul>
+            <li>Gray whale migration north</li>
+            <li>Sea lion pups</li>
+            <li>Wildflower blooms</li>
+          </ul>
+        </div>
+        <div class="pc-season">
+          <h4>Summer (Jun-Aug)</h4>
+          <ul>
+            <li>Humpback whales feeding</li>
+            <li>Blue whales appear</li>
+            <li>Puffin colonies active</li>
+          </ul>
+        </div>
+        <div class="pc-season">
+          <h4>Fall (Sep-Nov)</h4>
+          <ul>
+            <li>Orca sightings increase</li>
+            <li>Sea otter activity peaks</li>
+            <li>Bird migration south</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <div class="pc-testimonials">
+    <div class="pc-container">
+      <h2 class="pc-section-title">What Our Guests Say</h2>
+      <div class="pc-testimonial-slider">
+        <div class="pc-testimonial-card">
+          <div class="pc-testimonial-content">
+            <img src="https://static.thenounproject.com/png/14163-200.png" alt="Quote" class="pc-quote-icon">
+            <p>"The Pacific Coast cruise exceeded all our expectations. Waking up to see the Golden Gate Bridge from our balcony was unforgettable. The wine country excursions were perfectly organized."</p>
+          </div>
+          <div class="pc-testimonial-author">
+            <img src="https://images.unsplash.com/photo-1545912453-db258ca9b7b7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFtZXJpY2FuJTIwd29tYW58ZW58MHx8MHx8fDA%3D" alt="Sarah J." class="pc-author-image">
+            <div>
+              <h4>Sarah J.</h4>
+              <p>Wine Country Cruise, April 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pc-testimonial-card">
+          <div class="pc-testimonial-content">
+            <img src="https://static.thenounproject.com/png/14163-200.png" alt="Quote" class="pc-quote-icon">
+            <p>"As first-time cruisers, we loved the California Coastal itinerary. The perfect mix of port days and sea days. The crew made us feel so special, and we saw whales right from the ship!"</p>
+          </div>
+          <div class="pc-testimonial-author">
+            <img src="https://www.shutterstock.com/image-photo/attractive-positive-african-american-young-600nw-2464015801.jpg" alt="Michael T." class="pc-author-image">
+            <div>
+              <h4>Michael T.</h4>
+              <p>California Coastal, September 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-cta-section">
+    <div class="pc-container">
+      <h2 class="pc-section-title">Ready to Explore the Pacific Coast?</h2>
+      <p class="pc-cta-text">Book your dream cruise today and take advantage of our limited-time offers:</p>
+      <ul class="pc-offer-list">
+        <li>Free onboard credit for suites</li>
+        <li>Complimentary shore excursion in one port</li>
+        <li>Reduced deposit for early bookings</li>
+      </ul>
+      <div class="pc-cta-buttons">
+        <a href="#" class="pc-cta-button pc-primary">Book Now</a>
+        <a href="#" class="pc-cta-button pc-secondary">Request Brochure</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<footer class="cruisesphere-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3 class="footer-logo">CruiseSphere</h3>
+        <p class="footer-about">Your gateway to unforgettable cruise experiences across the Mediterranean, Red Sea, and beyond. We specialize in luxury voyages with authentic American hospitality.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section links-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mediterranean Cruises</a></li>
+          <li><a href="#">Red Sea Cruises</a></li>
+          <li><a href="#">Ship Facilities</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-section contact-section">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> CruiseSphere HQ, New York, America</li>
+          <li><i class="fas fa-phone"></i> +1 920-022-277</li>
+          <li><i class="fas fa-envelope"></i> info@cruisesphere.com</li>
+          <li><i class="fas fa-clock"></i> Sun-Thu: 9AM - 6PM</li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="footer-section newsletter-section">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for exclusive deals and cruise updates</p>
+        <form>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2023 CruiseSphere. All Rights Reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+  </body>
+  </html>

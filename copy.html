@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruisesphere - Your Dream Cruise Awaits</title>
+    <link rel="stylesheet" href="copy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/">
+          <i class="fas fa-ship logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-main">CruiseSphere</span>
+            <span class="logo-tagline">America's Cruise Experts</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>USA Departures</h4>
+                <a href="alaska-cruises.html">Alaska Cruises</a>
+                <a href="hawaiian-islands.html">Hawaiian Islands</a>
+                <a href="new-england.html">New England</a>
+                <a href="pacific-coast.html">Pacific Coast</a>
+              </div>
+              <div class="dropdown-column">
+                <h4>International</h4>
+                <a href="caribbean.html">Caribbean</a>
+                <a href="mexico.html">Mexico</a>
+                <a href="bahamas.html">Bahamas</a>
+                <a href="panama-canal.html">Panama Canal</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Cruise Lines <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="royal-caribbean.html">Royal Caribbean</a>
+              <a href="celebrity.html">Celebrity</a>
+              <a href="norwegian.html">Norwegian</a>
+              <a href="carnival.html">Carnival</a>
+              <a href="disney.html">Disney</a>
+            </div>
+          </li>
+          <li><a href="deals.html">Deals</a></li>
+          <li class="dropdown">
+            <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="luxury-cruises.html">Luxury Cruises</a>
+              <a href="family-cruises.html">Family Cruises</a>
+              <a href="adventure-cruises.html">Adventure Cruises</a>
+              <a href="romantic-cruises.html">Romantic Cruises</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Plan <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="first-time-cruisers.html">First Time Cruisers</a>
+              <a href="packing-guide.html">Packing Guide</a>
+              <a href="travel-documents.html">Travel Documents</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <div class="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover The World By Sea</h1>
+                <p class="hero-subtitle">Luxury cruises to the most breathtaking destinations on earth</p>
+                
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <button class="tab active">Find Cruises</button>
+                        <button class="tab">Find Deals</button>
+                    </div>
+                    
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="destination"><i class="fas fa-map-marker-alt"></i> Destination</label>
+                            <select id="destination" name="destination">
+                                <option value="">Any Destination</option>
+                                <option value="caribbean">Caribbean</option>
+                                <option value="mediterranean">Mediterranean</option>
+                                <option value="alaska">Alaska</option>
+                                <option value="bahamas">Bahamas</option>
+                                <option value="europe">Europe</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="departure"><i class="far fa-calendar-alt"></i> Departure</label>
+                            <input type="date" id="departure" name="departure">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration"><i class="far fa-clock"></i> Duration</label>
+                            <select id="duration" name="duration">
+                                <option value="">Any Duration</option>
+                                <option value="3-5">3-5 Nights</option>
+                                <option value="6-8">6-8 Nights</option>
+                                <option value="9-12">9-12 Nights</option>
+                                <option value="13+">13+ Nights</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="search-btn">Search Cruises</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+    
+    // Header scroll effect
+    const header = document.querySelector('.header');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    
+    // Tab switching in search box
+    const tabs = document.querySelectorAll('.tab');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+    
+    // Set minimum date for departure input to today
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('departure').min = today;
+});
+
+// Mobile menu toggle
+document.querySelector('.mobile-toggle').addEventListener('click', function() {
+  document.querySelector('.main-header').classList.toggle('active');
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.dropdown') && !event.target.closest('.mobile-toggle')) {
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function(dropdown) {
+      dropdown.style.display = 'none';
+    });
+  }
+});
+
+// Handle dropdown clicks on mobile
+document.querySelectorAll('.dropdown > a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 992) {
+      e.preventDefault();
+      const menu = this.nextElementSibling;
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        document.querySelectorAll('.dropdown-menu').forEach(function(m) {
+          m.style.display = 'none';
+        });
+        menu.style.display = 'block';
+      }
+    }
+  });
+});
+    </script>
+</body>
+</html>

@@ -165,15 +165,20 @@ body.no-scroll {
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.3s ease;
-  z-index: 100;
+  z-index: 1000; /* Increased from 100 to ensure it appears above other elements */
   display: flex;
   padding: 20px;
+  /* Add these to prevent layout shifts */
+  pointer-events: none; /* Allows clicking through when hidden */
 }
 
-.dropdown:hover .dropdown-menu {
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu { /* Added for better accessibility */
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  pointer-events: auto; /* Re-enable interactions when visible */
 }
 
 .dropdown-column {
@@ -190,17 +195,19 @@ body.no-scroll {
 }
 
 .dropdown-menu a {
-  color: var(--text) !important;
-  padding: 8px 0 !important;
-  display: block !important;
+  color: var(--text);
+  padding: 8px 0;
+  display: block;
   font-size: 0.9rem;
-  border-bottom: none !important;
+  transition: all 0.2s ease;
+  /* Removed !important by using more specific selector */
 }
 
 .dropdown-menu a:hover {
-  color: var(--primary) !important;
-  padding-left: 5px !important;
-  background: transparent !important;
+  color: var(--primary);
+  padding-left: 5px;
+  /* Added transform for smoother hover effect */
+  transform: translateX(3px);
 }
 
 /* Header Actions */
@@ -3523,7 +3530,7 @@ body.no-scroll {
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
-.card-content {
+/* .card-content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3531,11 +3538,13 @@ body.no-scroll {
   padding: 25px;
   color: white;
   z-index: 2;
-}
+} */
 
 .card-content h3 {
   font-size: 1.8rem;
   margin-bottom: 50px;
+    color: #094584;
+
 }
 
 .card-content p {
@@ -4341,7 +4350,7 @@ body.no-scroll {
 
 /* New England Cruise Hero Section Styles */
 .ne-cruise-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://example.com/new-england-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://d25g0eo9v926iy.cloudfront.net/wp-content/uploads/2024/09/15155105/New-England-Town-in-Fall.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -5150,5 +5159,1519 @@ body.no-scroll {
     
     .ne-port-subtitle {
         font-size: 1.1rem;
+    }
+}
+
+
+
+/* Pacific Coast */
+
+/* Pacific Coast Specific Styles - Won't conflict with main site */
+.pc-main-section {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Banner */
+.pc-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://res.cloudinary.com/https-cruiseweb-com/image/upload/q_auto:eco/f_auto/v1673644471/admin/images/ships/grand-princess-cruise-ship.jpg?Version=1673644471');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.pc-hero-overlay {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.pc-hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pc-hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.pc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Titles */
+.pc-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.pc-section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #ff7f50;
+  margin: 15px auto;
+}
+
+/* Buttons */
+.pc-cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ff7f50;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.pc-cta-button:hover {
+  background: #e67347;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pc-cta-button.pc-secondary {
+  background: transparent;
+  border: 2px solid #ff7f50;
+  color: #ff7f50;
+  margin-left: 15px;
+}
+
+.pc-cta-button.pc-secondary:hover {
+  background: #ff7f50;
+  color: white;
+}
+
+/* Intro Section */
+.pc-intro-section {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.pc-section-text {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.pc-highlight-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.pc-highlight-item {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.pc-highlight-item:hover {
+  transform: translateY(-10px);
+}
+
+.pc-highlight-icon {
+  width: 270px;
+  height: 80%;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+/* Featured Ports */
+.pc-featured-ports {
+  padding: 80px 0;
+  background: white;
+}
+
+.pc-ports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pc-port-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pc-port-card:hover {
+  transform: translateY(-5px);
+}
+
+.pc-port-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pc-port-content {
+  padding: 25px;
+}
+
+.pc-port-content h3 {
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+.pc-port-activities {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.pc-port-activities li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.pc-port-activities li:before {
+  content: '✓';
+  color: #ff7f50;
+  position: absolute;
+  left: -20px;
+}
+
+/* Cruise Options */
+.pc-cruise-options {
+  padding: 80px 0;
+  background: #f0f8ff;
+}
+
+.pc-options-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.pc-tab-button {
+  padding: 12px 25px;
+  margin: 0 10px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.pc-tab-button:hover, .pc-tab-button.active {
+  color: #0056b3;
+  border-bottom: 3px solid #ff7f50;
+}
+
+.pc-tab-content {
+  display: none;
+}
+
+.pc-tab-content.active {
+  display: block;
+}
+
+.pc-cruise-card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pc-cruise-image {
+  width: 40%;
+  object-fit: cover;
+}
+
+.pc-cruise-details {
+  padding: 30px;
+  width: 60%;
+}
+
+.pc-cruise-duration {
+  color: #ff7f50;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.pc-cruise-highlights {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.pc-cruise-highlights span {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.pc-cruise-highlights ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Testimonials */
+.pc-testimonials {
+  padding: 80px 0;
+  background: white;
+}
+
+.pc-testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pc-testimonial-card {
+  min-width: 350px;
+  scroll-snap-align: start;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pc-quote-icon {
+  width: 30px;
+  margin-bottom: 15px;
+}
+
+.pc-testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pc-author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* CTA Section */
+.pc-cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0056b3, #003366);
+  color: white;
+  text-align: center;
+}
+
+.pc-cta-section .pc-section-title {
+  color: white;
+}
+
+.pc-cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.pc-offer-list {
+  list-style: none;
+  margin: 30px auto;
+  max-width: 500px;
+}
+
+.pc-offer-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.pc-offer-list li:before {
+  content: '★';
+  color: #ff7f50;
+  position: absolute;
+  left: 0;
+}
+
+.pc-cta-buttons {
+  margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .pc-hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .pc-cruise-card {
+    flex-direction: column;
+  }
+  
+  .pc-cruise-image, .pc-cruise-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pc-hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .pc-hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .pc-section-title {
+    font-size: 2rem;
+  }
+  
+  .pc-highlight-item {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+  
+  .pc-ports-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pc-cta-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pc-cta-button.pc-secondary {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pc-hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .pc-options-tabs {
+    flex-direction: column;
+  }
+  
+  .pc-tab-button {
+    margin: 5px 0;
+  }
+}
+
+
+/* Wildlife & Nature Section Styles */
+.pc-wildlife-section {
+  padding: 80px 0;
+  background: #f5faf7;
+}
+
+.pc-section-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.pc-wildlife-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.pc-wildlife-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.pc-wildlife-card:hover {
+  transform: translateY(-5px);
+}
+
+.pc-wildlife-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pc-wildlife-image-wrapper {
+  position: relative;
+}
+
+.pc-wildlife-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 300px;
+}
+
+.pc-wildlife-featured .pc-wildlife-image {
+  min-height: 400px;
+}
+
+.pc-wildlife-content {
+  padding: 30px;
+}
+
+.pc-wildlife-featured .pc-wildlife-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pc-wildlife-facts {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.pc-wildlife-facts li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.pc-wildlife-facts li:before {
+  content: '•';
+  color: #ff7f50;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.pc-wildlife-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.pc-meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.pc-icon-tree, 
+.pc-icon-hike,
+.pc-icon-tide,
+.pc-icon-family,
+.pc-icon-binoculars,
+.pc-icon-pup,
+.pc-icon-checklist {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pc-wildlife-cards-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.pc-wildlife-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff7f50;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.pc-cta-button.pc-small {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  align-self: flex-start;
+}
+
+/* Seasonal Guide */
+.pc-seasonal-guide {
+  margin-top: 60px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pc-guide-title {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.pc-seasonal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.pc-season {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.pc-season h4 {
+  color: #0056b3;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff7f50;
+}
+
+.pc-season ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.pc-season li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.pc-season li:before {
+  content: '→';
+  color: #ff7f50;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .pc-wildlife-featured {
+    grid-template-columns: 1fr;
+  }
+  
+  .pc-wildlife-featured .pc-wildlife-image {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pc-wildlife-cards-group {
+    grid-template-columns: 1fr;
+  }
+  
+  .pc-seasonal-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pc-season {
+    text-align: left;
+  }
+}
+
+
+/* Caribbean Cruise Specific Styles - Unique Class Names */
+.cs-caribbean-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Carnival_Paradise_in_Carnival_Cruise_Line%27s_new_livery.jpg') center/cover no-repeat;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cs-hero-overlay {
+    max-width: 1200px;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.cs-main-title {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    animation: cs-fadeInDown 1s ease-out;
+}
+
+.cs-hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: cs-fadeInUp 1s ease-out 0.3s both;
+}
+
+.cs-explore-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6B35;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    animation: cs-fadeIn 1s ease-out 0.6s both;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #FF6B35;
+}
+
+.cs-explore-btn:hover {
+    background-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for consistent width */
+.cs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Titles */
+.cs-section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #003366;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.cs-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #FF6B35, #00A5E0);
+    border-radius: 2px;
+}
+
+.cs-section-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Intro Section */
+.cs-caribbean-intro {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.cs-intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.cs-highlight-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.cs-highlight-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.cs-card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.cs-card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.cs-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.cs-highlight-card h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.cs-highlight-card p {
+    color: #666;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* Itineraries Section */
+.cs-caribbean-itineraries {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #f9f9f9, #e6f2ff);
+}
+
+.cs-itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.cs-itinerary-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cs-card-3d-hover {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.cs-card-3d-hover:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cs-itinerary-img-container {
+    position: relative;
+}
+
+.cs-itinerary-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.cs-duration {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0, 53, 102, 0.9);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.cs-itinerary-content {
+    padding: 25px;
+}
+
+.cs-itinerary-content h3 {
+    color: #003366;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.cs-port-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cs-port-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    color: #555;
+    position: relative;
+    padding-left: 25px;
+}
+
+.cs-port-list li::before {
+    content: '✓';
+    color: #FF6B35;
+    position: absolute;
+    left: 0;
+}
+
+.cs-price-from {
+    font-size: 1.3rem;
+    color: #FF6B35;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cs-book-now {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cs-book-now:hover {
+    background-color: #FF6B35;
+}
+
+/* Experiences Section */
+.cs-caribbean-experiences {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.cs-experience-tabs {
+    margin-top: 50px;
+}
+
+.cs-tab-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.cs-tab-btn {
+    padding: 12px 25px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cs-tab-btn.active {
+    background-color: #003366;
+    color: white;
+}
+
+.cs-tab-btn:hover:not(.active) {
+    background-color: #e0e0e0;
+}
+
+.cs-tab-content {
+    display: none;
+    animation: cs-fadeIn 0.5s ease-out;
+}
+
+.cs-tab-content.active {
+    display: block;
+}
+
+.cs-tab-content-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(to right, #f9f9f9, white);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.cs-tab-img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.cs-tab-img:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.cs-tab-text {
+    flex: 1;
+}
+
+.cs-tab-text h3 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.cs-tab-text p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.cs-feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cs-feature-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #444;
+}
+
+.cs-feature-list li::before {
+    content: '→';
+    color: #FF6B35;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.cs-caribbean-testimonials {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #e6f2ff, #f9f9f9);
+}
+
+.cs-testimonial-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cs-testimonial-slide {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cs-testimonial-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-quote-icon {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.cs-testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.cs-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cs-author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #003366;
+}
+
+.cs-author-info h4 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.cs-author-info p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.cs-rating {
+    color: #FF6B35;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cs-caribbean-cta {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 53, 102, 0.9), rgba(0, 53, 102, 0.9)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Carnival_Paradise_in_Carnival_Cruise_Line%27s_new_livery.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.cs-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cs-cta-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.cs-cta-text {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.cs-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cs-cta-btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.cs-primary-btn {
+    background-color: #FF6B35;
+    color: white;
+    border: 2px solid #FF6B35;
+}
+
+.cs-primary-btn:hover {
+    background-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.cs-secondary-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cs-secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes cs-fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes cs-fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cs-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cs-main-title {
+        font-size: 3.5rem;
+    }
+    
+    .cs-hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .cs-tab-content-inner {
+        flex-direction: column;
+    }
+    
+    .cs-tab-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cs-main-title {
+        font-size: 2.8rem;
+    }
+    
+    .cs-section-title {
+        font-size: 2.2rem;
+    }
+    
+    .cs-highlight-cards {
+        flex-direction: column;
+    }
+    
+    .cs-highlight-card {
+        min-width: 100%;
+    }
+    
+    .cs-itinerary-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cs-testimonial-slide {
+        flex: 0 0 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cs-main-title {
+        font-size: 2.2rem;
+    }
+    
+    .cs-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .cs-explore-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .cs-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .cs-cta-title {
+        font-size: 2rem;
+    }
+    
+    .cs-cta-text {
+        font-size: 1.1rem;
+    }
+    
+    .cs-cta-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .cs-cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* 3D Destination Spotlight Section */
+.cs-destination-spotlight {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cs-destination-spotlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Carnival_Paradise_in_Carnival_Cruise_Line%27s_new_livery.jpg') repeat;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.cs-destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    perspective: 2000px;
+}
+
+.cs-destination-card {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.cs-destination-card:hover .cs-destination-card-inner {
+    transform: rotateY(180deg);
+}
+
+.cs-destination-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cs-destination-card-front,
+.cs-destination-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cs-destination-card-front {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    transform: rotateY(0deg);
+}
+
+.cs-destination-overlay {
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0, 53, 102, 0.8), transparent);
+    color: white;
+    text-align: center;
+    transform: translateZ(50px);
+}
+
+.cs-destination-card-front h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cs-destination-icon {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.cs-destination-card-back {
+    background: white;
+    padding: 30px;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cs-destination-card-back h3 {
+    color: #003366;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.cs-destination-card-back h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #FF6B35;
+}
+
+.cs-destination-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.cs-destination-features li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.cs-destination-features li::before {
+    content: '•';
+    color: #FF6B35;
+    position: absolute;
+    left: 5px;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.cs-best-time {
+    background: #003366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.cs-view-all-destinations {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cs-view-all-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #FF6B35;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.cs-view-all-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FF6B35, #FF8E53);
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.cs-view-all-btn:hover::before {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.cs-view-all-btn:hover {
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.6);
+    transform: translateY(-3px);
+}
+
+/* 3D Parallax Effect for Section */
+@media (min-width: 1024px) {
+    .cs-destination-spotlight {
+        perspective: 1000px;
+    }
+    
+    .cs-container {
+        transform-style: preserve-3d;
+    }
+    
+    .cs-section-title {
+        transform: translateZ(30px);
+    }
+    
+    .cs-section-subtitle {
+        transform: translateZ(20px);
+    }
+    
+    .cs-destination-grid {
+        transform: translateZ(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cs-destination-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cs-destination-card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cs-destination-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cs-destination-card-front h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cs-destination-card-back {
+        padding: 20px;
+    }
+    
+    .cs-destination-card-back h3 {
+        font-size: 1.4rem;
+    }
+    
+    .cs-view-all-btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
     }
 }
